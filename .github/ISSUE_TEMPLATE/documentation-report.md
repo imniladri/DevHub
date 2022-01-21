@@ -1,10 +1,9 @@
 ---
 name: "Documentation Report \U0001F4DA"
 about: Describe the documentation you want add.
-title: 'Doc: '
+title: "Doc: "
 labels: documentation
-assignees: ''
-
+assignees: ""
 ---
 
 ### Describe the solution you'd like

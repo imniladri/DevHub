@@ -1,10 +1,9 @@
 ---
 name: "Feature Request \U0001F680"
 about: Suggest an idea for this project
-title: 'Feature: '
+title: "Feature: "
 labels: enhancement
-assignees: ''
-
+assignees: ""
 ---
 
 ### Is your feature request related to a problem? Please describe.
