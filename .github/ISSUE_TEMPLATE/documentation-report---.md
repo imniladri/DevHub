@@ -1,15 +1,11 @@
 ---
-name: "Feature Request \U0001F680"
-about: Suggest an idea for this project
-title: 'Feature: '
-labels: enhancement
+name: "Documentation Report \U0001F4DA"
+about: Describe the documentation you want add.
+title: 'Doc: '
+labels: documentation
 assignees: ''
 
 ---
-
-### Is your feature request related to a problem? Please describe.
-
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
 
 ### Describe the solution you'd like
 
