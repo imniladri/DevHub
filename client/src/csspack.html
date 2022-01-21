@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Site Title & Favicon-->
+    <title>CSS | Dev Hub</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico?v=1" />
+
+    <!-- Meta Viewport Set -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Meta Author, Description, Keywords -->
+    <meta name="author" content="Niladri Mondal" />
+    <meta name="description" content="Welcome to Dev Hub" />
+    <meta name="keywords" content="Developer, Design, Library, Hub, Package" />
+
+    <!-- Meta OG: Site, Title, Description, Image Displayed -->
+    <meta property="og:site_name" content="DEVHUB" />
+    <meta property="og:title" content="Dev Hub" />
+    <meta property="og:description" content="Welcome to Dev Hub" />
+    <meta property="og:image" content="/img/logo.svg" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" />
+
+    <!-- Tab Color -->
+    <!-- Mobile -->
+    <meta name="theme-color" content="#21222d" />
+    <!-- Windows -->
+    <meta name="msapplication-navbutton-color" content="#21222d" />
+
+    <!-- EXTERNAL CSS -->
+    <link rel="stylesheet" href="/css/libraries/bootstrap.min.css" />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="/css/components/settings.css" />
+    <link rel="stylesheet" href="/css/pages/library.css" />
+
+    <!-- EXTERNAL JS -->
+    <script defer src="/js/libraries/jquery-3.6.0.min.js"></script>
+    <script defer src="/js/libraries/bootstrap.min.js"></script>
+    <script defer src="/js/libraries/sweetalert.min.js"></script>
+
+    <!-- MAIN JS -->
+    <script defer src="/js/main.js"></script>
+    <script defer src="/data/css.data.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <header>
+        <nav>
+            <a href="/" class="nav_brand">
+                <img src="/img/logo.svg" alt="DevHub">
+                <h4>Dev<span>Hub</span></h4>
+            </a>
+
+            <div class="menu_icon menu_candy">
+                <span class="menu_open box_1"></span>
+                <span class="menu_open box_2"></span>
+                <span class="menu_open box_3"></span>
+                <span class="menu_open box_4"></span>
+                <span class="menu_close close_1"></span>
+                <span class="menu_close close_2"></span>
+            </div>
+
+            <div class="nav_items">
+                <a href="/src/csspack.html" class="nav_links active">Css</a>
+                <a href="/src/jspack.html" class="nav_links">Javascript</a>
+                <a href="/src/iconpack.html" class="nav_links">Icons</a>
+                <a href="/src/imgpack.html" class="nav_links">Images</a>
+                <a href="javascript:void(0)" class="nav_links">Android</a>
+                <a href="javascript:void(0)" class="nav_links">Api</a>
+            </div>
+        </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Library Start -->
+    <section id="libraries">
+
+        <!-- Search -->
+        <form class="searchbar">
+            <input type="search" id="search" name="search" class="form-control" placeholder="Search for a css lib name!"
+                required autocomplete="off" />
+        </form>
+
+        <!-- Libraries -->
+        <div class="libraries">
+            <!-- All CSS Libraries Mapped: "css.data.js" -->
+        </div>
+
+    </section>
+    <!-- Library End -->
+
+    <!-- Footer Start -->
+    <footer>
+        <h2>
+            Developed by <a href="https://imniladri.in/">Niladri Mondal</a> <br />
+            Want to contribute? <a href="https://github.com/imniladri/DevHub/">Click Here</a>
+        </h2>
+        <p>
+            <span>Next Js</span> version coming soon! <br /> Under development with more cool features.
+        </p>
+    </footer>
+    <!-- Footer End -->
+
+</body>
+
+</html>
