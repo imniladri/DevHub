@@ -1,0 +1,97 @@
+<svg id="Text Landscape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 84">
+    <defs>
+        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color: #2fdfff; stop-opacity: 1" />
+            <stop offset="100%" style="stop-color: #026efd; stop-opacity: 1" />
+        </linearGradient>
+
+        <style>
+            svg {
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s ease;
+            }
+
+            svg.loaded {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            svg.loaded path,
+            svg.loaded polyline {
+                fill: none;
+                stroke: url(#grad);
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 4px;
+            }
+
+            @keyframes line {
+                0% {
+                    stroke-dasharray: 50;
+                }
+                50% {
+                    stroke-dasharray: 100;
+                }
+                100% {
+                    stroke-dashoffset: 0;
+                }
+            }
+
+            svg.loaded path#D {
+                stroke-dasharray: 320;
+                stroke-dashoffset: 320;
+                animation: line 10s cubic-bezier(0.35, 1.95, 0.51, 0.66) forwards 0.2s;
+            }
+            svg.loaded polyline#E {
+                stroke-dasharray: 350;
+                stroke-dashoffset: 350;
+                animation: line 10s cubic-bezier(0.35, 1.95, 0.51, 0.66) forwards 0.6s;
+            }
+            svg.loaded polyline#V {
+                stroke-dasharray: 254;
+                stroke-dashoffset: 254;
+                animation: line 10s cubic-bezier(0.35, 1.95, 0.51, 0.66) forwards 1.2s;
+            }
+
+            svg.loaded polyline#H {
+                stroke-dasharray: 272;
+                stroke-dashoffset: 272;
+                animation: line 10s cubic-bezier(0.35, 1.95, 0.51, 0.66) forwards 1.5s;
+            }
+            svg.loaded path#U {
+                stroke-dasharray: 285;
+                stroke-dashoffset: 285;
+                animation: line 10s cubic-bezier(0.35, 1.95, 0.51, 0.66) forwards 1.8s;
+            }
+            svg.loaded path#B {
+                stroke-dasharray: 350;
+                stroke-dashoffset: 350;
+                animation: line 10s cubic-bezier(0.35, 1.95, 0.51, 0.66) forwards 2.0s;
+            }
+        </style>
+    </defs>
+
+    <script>
+		window.addEventListener("load", () => {
+			var svg = document.querySelector('svg');
+
+			setTimeout(() => {
+				svg.setAttribute("class", "loaded");
+			}, 1000);
+		});
+	</script>
+
+    <title>Dev Hub</title>
+
+    <g id="Dev">
+        <path id="D" d="M360,650.5v-81h20.86A40.14,40.14,0,0,1,421,609.64v.72a40.14,40.14,0,0,1-40.14,40.14H366v-75" transform="translate(-359 -568)" />
+        <polyline id="E" points="105.4 2 74.4 55 115.4 55 115.4 62 74.4 62 74.4 82 115.4 82" />
+        <polyline id="V" points="139.8 64.5 139.8 1.5 131.8 1.5 131.8 82.5 139.8 82.5 183.8 1.5" />
+    </g>
+    <g id="Hub">
+        <polyline id="H" points="263.2 1 263.2 83 270.2 83 270.2 54 306.2 54 306.2 83 313.2 83 313.2 1" />
+        <path id="U" d="M687.6,569v56a26,26,0,0,0,26,26h0a26,26,0,0,0,26-26V569h8v82" transform="translate(-359 -568)" />
+        <path id="B" d="M770,576v55h16a31,31,0,0,0,31-31h0a31,31,0,0,0-31-31H763v82h37a18,18,0,0,0,18-18h0a9.52,9.52,0,0,0-2.79-6.74L814,625" transform="translate(-359 -568)" />
+    </g>
+</svg>
