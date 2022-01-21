@@ -1,7 +1,7 @@
 <div id="top"></div>
 
 <!-- PROJECT SHIELDS -->
-<div align="center">
+<!-- <div align="center">
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -10,7 +10,7 @@
 [![MIT License][license-shield]][license-url]
 [![Skype][skype-shield]][skype-url]
 
-</div>
+</div> -->
 
 <br />
 <!-- PROJECT LOGO -->
