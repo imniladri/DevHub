@@ -1,7 +1,8 @@
 <div id="top"></div>
 
 <!-- PROJECT SHIELDS -->
-<!-- <div align="center">
+<!--
+<div align="center">
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -10,7 +11,8 @@
 [![MIT License][license-shield]][license-url]
 [![Skype][skype-shield]][skype-url]
 
-</div> -->
+</div>
+-->
 
 <br />
 <!-- PROJECT LOGO -->
@@ -25,14 +27,14 @@
 <p align="center">
     A awesome hub for all developers have all kind of dev libraries & packages.
     <br />
-    <a href="https://github.com/imniladri/Devhub"><strong>Explore Repo</strong></a>
+    <a href="https://github.com/imniladri/DevHub"><strong>Explore Repo</strong></a>
     <br />
     <br />
     <a href="https://devohub.vercel.app/">View Demo</a>
     ·
-    <a href="https://github.com/imniladri/Devhub/issues">Report Bug</a>
+    <a href="https://github.com/imniladri/DevHub/issues">Report Bug</a>
     ·
-    <a href="https://github.com/imniladri/Devhub/issues">Request Feature</a>
+    <a href="https://github.com/imniladri/DevHub/issues">Request Feature</a>
 </p>
 </div>
 
@@ -107,6 +109,7 @@ Here it seems that the main moto is to make the frontend awesome.
     ├── index.html          Main Home Page
     ├── (Other Pages)       Extra Pages (404, new)
 ```
+
 <!-- BEFORE YOU START -->
 
 ### Before You Start
@@ -163,7 +166,7 @@ Once you make your contribution, do not forget to add your name in `CONTRIBUTING
 
 ## Roadmap
 
-See the [open issues](https://github.com/imniladri/Devhub/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/imniladri/DevHub/issues) for a full list of proposed features (and known issues).
 
 -   [ ] Documentation at some places.
 -   [ ] Addition of Some Cool Styles.
@@ -223,15 +226,15 @@ clientributed under the MIT License. See `LICENSE` for more information.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/imniladri/Devhub.svg?style=for-the-badge&color
-[contributors-url]: https://github.com/imniladri/Devhub/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/imniladri/Devhub.svg?style=for-the-badge&color=FFE400
-[forks-url]: https://github.com/imniladri/Devhub/network/members
-[stars-shield]: https://img.shields.io/github/stars/imniladri/Devhub.svg?style=for-the-badge&color=FFE400
-[stars-url]: https://github.com/imniladri/Devhub/stargazers
-[issues-shield]: https://img.shields.io/github/issues/imniladri/Devhub.svg?style=for-the-badge&color
-[issues-url]: https://github.com/imniladri/Devhub/issues
-[license-shield]: https://img.shields.io/github/license/imniladri/Devhub.svg?style=for-the-badge&color=3DB2FF
-[license-url]: https://github.com/imniladri/Devhub/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/imniladri/DevHub.svg?style=for-the-badge&color
+[contributors-url]: https://github.com/imniladri/DevHub/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/imniladri/DevHub.svg?style=for-the-badge&color=FFE400
+[forks-url]: https://github.com/imniladri/DevHub/network/members
+[stars-shield]: https://img.shields.io/github/stars/imniladri/DevHub.svg?style=for-the-badge&color=FFE400
+[stars-url]: https://github.com/imniladri/DevHub/stargazers
+[issues-shield]: https://img.shields.io/github/issues/imniladri/DevHub.svg?style=for-the-badge&color
+[issues-url]: https://github.com/imniladri/DevHub/issues
+[license-shield]: https://img.shields.io/github/license/imniladri/DevHub.svg?style=for-the-badge&color=3DB2FF
+[license-url]: https://github.com/imniladri/DevHub/blob/master/LICENSE.txt
 [skype-shield]: https://img.shields.io/badge/-Skype-white.svg?style=for-the-badge&logo=skype&logoColor=fff&color=00AFF0
 [skype-url]: https://join.skype.com/invite/x4ZrtKrM5uyv
