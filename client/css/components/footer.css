@@ -1,0 +1,54 @@
+/* **************************** Footer Section Styles **************************** */
+
+footer {
+	margin: 10rem auto 0;
+	padding: 4rem 10rem 2rem;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 4px solid var(--tertiarycolor);
+	background: rgba(0, 0, 0, 0.2);
+}
+
+footer h2 {
+	font-size: 2rem;
+	font-weight: 500;
+	font-family: var(--textfont);
+	color: var(--primarygrey);
+	letter-spacing: 1px;
+	line-height: 1.6;
+}
+
+footer h2 a {
+	color: var(--tertiarycolor);
+	text-decoration: none !important;
+	transition: all 0.2s ease-in-out;
+}
+
+footer h2 a:hover {
+	color: var(--primarywhite);
+}
+
+footer p {
+	font-size: 2rem;
+	font-weight: 500;
+	font-family: var(--textfont);
+	color: var(--primarygrey);
+	letter-spacing: 1px;
+	line-height: 1.6;
+}
+
+footer p span {
+	color: var(--warningcolor);
+}
+
+@media (max-width: 992px) {
+	footer {
+		padding: 4rem 4rem 2rem;
+		align-items: flex-start;
+		flex-direction: column;
+	}
+}
+
+/* **************************** Styles End **************************** */

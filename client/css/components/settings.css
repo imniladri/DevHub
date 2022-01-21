@@ -1,0 +1,181 @@
+/*
+   _____      _   _   _                 
+  / ____|    | | | | (_)                
+ | (___   ___| |_| |_ _ _ __   __ _ ___ 
+  \___ \ / _ \ __| __| | '_ \ / _` / __|
+  ____) |  __/ |_| |_| | | | | (_| \__ \
+ |_____/ \___|\__|\__|_|_| |_|\__, |___/
+                               __/ |    
+                              |___/     
+*/
+
+/* **************************** Fonts **************************** */
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+
+/* **************************** Components Stylesheets **************************** */
+
+@import url(./header.css);
+@import url(./footer.css);
+@import url(./loader.css);
+
+/* **************************** Site General Settings **************************** */
+
+* {
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+/* **************************** Responsive Font Size **************************** */
+
+html {
+	font-size: 62.5%;
+}
+
+@media (max-width: 992px) {
+	html {
+		font-size: 60%;
+	}
+}
+
+@media (max-width: 768px) {
+	html {
+		font-size: 55%;
+	}
+}
+
+/* **************************** Body Settings **************************** */
+
+body {
+	font-family: var(--mainfont);
+	background: var(--primaryBg);
+}
+
+/* **************************** Root Variables **************************** */
+
+:root {
+	/* Default Colors */
+	--primaryblack: #222831;
+	--primarywhite: #ffffff;
+	--lightwhite: #f7fafc;
+	--primarygrey: #9ba4b4;
+
+	/* Bg Colors */
+	--primaryBg: #1b1d25;
+	--secondaryBg: #21222d;
+
+	/* Theme Colors */
+	--primarycolor: #0689ff;
+	--secondarycolor: #3347ff;
+	--tertiarycolor: #fff133;
+	--warningcolor: #ff005c;
+
+	/* Default Fonts */
+	--mainfont: "Montserrat", sans-serif;
+	--textfont: "Outfit", sans-serif;
+}
+
+/* **************************** Scroll Bar **************************** */
+
+::-webkit-scrollbar {
+	width: 7px;
+	height: 6px;
+	background: transparent;
+}
+::-webkit-scrollbar-thumb {
+	background: var(--primarywhite);
+	border-radius: 2px;
+}
+
+/* **************************** Selection **************************** */
+
+::selection {
+	color: var(--primarywhite);
+	background: var(--primarycolor);
+}
+
+/* **************************** User Select None **************************** */
+
+img,
+object,
+.noselect {
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+button.btn:active,
+button.btn:focus,
+a.btn:active,
+a.btn:focus {
+	box-shadow: none;
+}
+
+/* **************************** Font Faces **************************** */
+
+@font-face {
+	font-family: "Blanka";
+	src: url("/fonts/Blanka.otf");
+}
+
+@font-face {
+	font-family: "Do4Brain";
+	src: url("/fonts/Do4Brain.ttf");
+}
+
+@font-face {
+	font-family: "StudioFeixen";
+	src: url("/fonts/StudioFeixen.ttf");
+}
+
+/* **************************** Swal Alert **************************** */
+
+div.swal-overlay {
+	background: rgba(24, 26, 32, 0.8);
+}
+
+div.swal-overlay .swal-modal {
+	margin: auto;
+	padding: 2rem;
+	background: var(--secondaryBg);
+	border-radius: 10px;
+}
+
+div.swal-overlay .swal-modal .swal-title {
+	margin: 1rem auto;
+	font-size: 3rem;
+	font-weight: 600;
+	font-family: "Do4Brain", sans-serif;
+	color: var(--primarywhite);
+	-webkit-text-stroke: 1px var(--primarywhite);
+	letter-spacing: 1.2px;
+	text-align: center;
+}
+
+div.swal-overlay .swal-modal .swal-text {
+	margin: -0.5rem;
+	font-size: 2.2rem;
+	font-weight: 500;
+	font-family: var(--mainfont);
+	color: var(--primarygrey);
+	letter-spacing: 0.4px;
+	text-align: center;
+}
+
+div.swal-overlay .swal-modal .swal-footer {
+	margin: 1rem;
+	text-align: center;
+}
+
+div.swal-overlay .swal-modal .swal-button {
+	padding: 0.8rem 2rem;
+	font: 600 1.8rem var(--textfont);
+	color: var(--primarywhite);
+	background: var(--warningcolor);
+	box-shadow: none;
+}
+
+/* **************************** Styles End **************************** */

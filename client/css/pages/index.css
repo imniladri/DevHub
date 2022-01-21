@@ -1,0 +1,512 @@
+/* **************************** Index Page Styles **************************** */
+
+/* **************************** Index Banner **************************** */
+
+section#dev_banner div.dev_banner {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: var(--primaryBg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+/* **************************** Index Banner Images **************************** */
+
+div.dev_banner .img_svg {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.dev_banner .img_svg .banner {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0.2;
+	background: url(/img/banner.svg) no-repeat center / cover;
+}
+
+div.dev_banner .img_svg img:nth-child(1) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: auto;
+}
+
+div.dev_banner .img_svg img:nth-child(2) {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 80%;
+	height: auto;
+}
+
+/* **************************** Index Banner Texts **************************** */
+
+section#dev_banner div.dev_banner .text_svg {
+	margin: auto;
+	position: relative;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+}
+
+section#dev_banner div.dev_banner .text_svg h1 {
+	margin: 1rem auto;
+	font-size: 4rem;
+	font-weight: 600;
+	font-family: "Do4Brain", sans-serif;
+	color: var(--primarywhite);
+	opacity: 0;
+	user-select: none;
+	letter-spacing: 10rem;
+	transition: all 0.6s cubic-bezier(0.35, 1.95, 0.51, 0.66);
+}
+
+section#dev_banner div.dev_banner .text_svg h1.active {
+	opacity: 1;
+	letter-spacing: 0.5rem;
+}
+
+section#dev_banner div.dev_banner object.logo {
+	margin: 3rem auto;
+	width: 23rem;
+	height: auto;
+	opacity: 0;
+	transform: scale(0);
+	transition: all 0.6s cubic-bezier(0.35, 1.95, 0.51, 0.66);
+}
+
+section#dev_banner div.dev_banner object.text {
+	margin: 2rem auto;
+	padding: 0 2rem;
+	width: 100rem;
+	height: auto;
+}
+
+section#dev_banner div.dev_banner object.logo.active {
+	opacity: 1;
+	transform: scale(1);
+}
+
+/* **************************** Responsive Media **************************** */
+
+@media (max-width: 992px) {
+	section#dev_banner div.dev_banner .text_svg h1 {
+		letter-spacing: 2rem;
+	}
+	section#dev_banner div.dev_banner object.logo {
+		width: 20rem;
+	}
+	section#dev_banner div.dev_banner object.text {
+		padding: 0 4rem;
+		width: 70rem;
+	}
+}
+
+@media (max-width: 768px) {
+	section#dev_banner div.dev_banner object.logo {
+		width: 14rem;
+	}
+	section#dev_banner div.dev_banner object.text {
+		width: 100%;
+	}
+}
+
+@media (max-width: 572px) {
+	section#dev_banner div.dev_banner object.text {
+		width: 80%;
+	}
+}
+
+/* ************************ Index Navbar ************************ */
+
+section#dev_navbar div.dev_navbar {
+	margin: 10rem auto;
+	padding: 1rem;
+	width: 90%;
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	background: var(--secondaryBg);
+	border-radius: 8px;
+}
+
+div.dev_navbar a.nav_btn {
+	position: relative;
+	margin: 1rem;
+	padding: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-decoration: none;
+	border-radius: 6px;
+	background: var(--primaryBg);
+	transition: all 0.15s ease-in-out;
+}
+
+div.dev_navbar a.nav_btn::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 4px solid var(--primarycolor);
+	opacity: 0;
+	border-radius: 6px;
+	transition: all 0.2s ease-in-out;
+}
+
+div.dev_navbar a.nav_btn:hover:before {
+	opacity: 1;
+}
+
+div.dev_navbar a.nav_btn i {
+	margin: 0.5rem auto;
+	font-size: 5.4rem;
+	color: var(--primarygrey);
+	transition: all 0.15s ease-in-out;
+}
+
+div.dev_navbar a.nav_btn span {
+	margin: 0.5rem auto;
+	font-size: 2.2rem;
+	font-weight: 600;
+	font-family: var(--codefont);
+	color: var(--primarygrey);
+	letter-spacing: 0.4px;
+	transition: all 0.15s ease-in-out;
+}
+
+div.dev_navbar a.nav_btn:hover i,
+div.dev_navbar a.nav_btn:hover span {
+	color: var(--primarywhite);
+}
+
+/* **************************** Responsive Media **************************** */
+
+@media (max-width: 1080px) {
+	section#dev_navbar div.dev_navbar {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (max-width: 992px) {
+	div.dev_navbar a.nav_btn i {
+		font-size: 5rem;
+	}
+	div.dev_navbar a.nav_btn span {
+		font-size: 2.2rem;
+	}
+}
+
+@media (max-width: 572px) {
+	section#dev_navbar div.dev_navbar {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	div.dev_navbar a.nav_btn {
+		margin: 0.5rem;
+		padding: 1rem;
+	}
+	div.dev_navbar a.nav_btn span {
+		display: none;
+	}
+}
+
+/* **************************** Index About **************************** */
+
+section#dev_about div.dev_about {
+	position: relative;
+	margin: 10rem auto;
+	padding: 2rem;
+	width: 90%;
+	height: 90vh;
+	background: var(--secondaryBg);
+	border-radius: 8px;
+}
+
+section#dev_about div.dev_about::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 6px solid var(--tertiarycolor);
+	opacity: 0;
+	border-radius: 8px;
+	transition: all 0.2s ease-in-out;
+}
+
+section#dev_about div.dev_about:hover:before {
+	opacity: 1;
+}
+
+section#dev_about div.dev_about .des,
+section#dev_about div.dev_about .fig {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+section#dev_about div.dev_about h2 {
+	margin: 3rem auto;
+	font-size: 5rem;
+	font-weight: 500;
+	font-family: "Blanka", sans-serif;
+	color: var(--tertiarycolor);
+	letter-spacing: 3px;
+	text-align: center;
+	user-select: none;
+}
+
+section#dev_about div.dev_about h2 span {
+	color: var(--primarywhite);
+}
+
+section#dev_about div.dev_about p {
+	margin: 2rem auto;
+	font-size: 2.5rem;
+	font-weight: 400;
+	font-family: var(--textfont);
+	color: var(--primarygrey);
+	text-align: justify;
+	text-align-last: center;
+	line-height: 1.5;
+	letter-spacing: 0.8px;
+	word-spacing: 1px;
+}
+
+section#dev_about div.dev_about p span {
+	font-weight: 600;
+	color: var(--primarycolor);
+}
+
+section#dev_about div.dev_about p span:first-child {
+	padding: 2px 8px 4px;
+	font-weight: 500;
+	color: var(--primarywhite);
+	background: var(--primarycolor);
+	border-radius: 4px;
+}
+
+section#dev_about div.dev_about object {
+	margin: auto;
+	width: 100%;
+	height: auto;
+}
+
+/* **************************** Responsive Media **************************** */
+
+@media (max-width: 992px) {
+	section#dev_about div.dev_about {
+		height: auto;
+	}
+	section#dev_about div.dev_about h2 {
+		font-size: 4rem;
+	}
+	section#dev_about div.dev_about p {
+		font-size: 2rem;
+	}
+}
+
+@media (max-width: 572px) {
+	section#dev_about div.dev_about::before {
+		border: 4px solid var(--tertiarycolor);
+	}
+	section#dev_about div.dev_about h2 {
+		margin: 1rem auto;
+		font-size: 3.5rem;
+	}
+	section#dev_about div.dev_about h2 span {
+		display: block;
+	}
+}
+
+/* **************************** Index Library **************************** */
+
+/* ============ Library Tiles ============ */
+
+section#dev_library {
+	margin: 5rem auto;
+	position: relative;
+	width: 90%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 4rem 2rem;
+}
+
+section#dev_library div.lib_banner {
+	position: relative;
+	margin: auto;
+	padding: 4rem;
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 50vh;
+	background: var(--secondaryBg);
+	border-radius: 8px;
+	overflow: hidden;
+	z-index: 1;
+}
+
+section#dev_library div.lib_banner::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 5px solid var(--tertiarycolor);
+	opacity: 0;
+	border-radius: 8px;
+	transition: all 0.4s ease-in-out;
+}
+
+section#dev_library div.lib_banner:hover:before {
+	opacity: 1;
+}
+
+/* ============ Library Tiles Figure ============ */
+
+div.lib_banner .figure {
+	position: absolute;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0.8;
+	z-index: -1;
+	transition: all 0.3s ease-in-out;
+}
+
+div.lib_banner .figure object {
+	width: 30rem;
+	height: auto;
+	transform: translateX(5rem) scale(0.95);
+	transition: all 0.6s cubic-bezier(0.34, 1.64, 0.56, 0.88);
+}
+
+div.lib_banner:hover .figure {
+	opacity: 1;
+}
+
+div.lib_banner:hover .figure object {
+	transform: translateX(3rem) scale(1);
+}
+
+/* ============ Library Tiles Content ============ */
+
+div.lib_banner .content {
+	position: relative;
+	width: 70%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+div.lib_banner .content h2 {
+	margin: 0.5rem 0;
+	font-size: 4rem;
+	font-weight: 600;
+	font-family: "Do4Brain", sans-serif;
+	color: var(--primarywhite);
+	-webkit-text-stroke: 1px var(--primarywhite);
+	letter-spacing: 1.2px;
+	text-align: left;
+	user-select: none;
+}
+
+div.lib_banner .content p {
+	margin: 0.5rem 0;
+	font-size: 2rem;
+	font-weight: 500;
+	font-family: var(--mainfont);
+	color: var(--primarygrey);
+	letter-spacing: 0.4px;
+	text-align: left;
+}
+
+div.lib_banner .content a {
+	margin: 1.5rem 0;
+	padding: 0.8rem 2.2rem;
+	font-size: 2rem;
+	font-weight: 500;
+	font-family: var(--textfont);
+	color: var(--primarywhite);
+	background: linear-gradient(145deg, var(--primarycolor) 0%, var(--secondarycolor) 80%);
+	background-size: 300%;
+	border: none;
+	border-radius: 6px;
+	letter-spacing: 1px;
+	text-align: center;
+	transition: all 0.2s ease-in-out;
+}
+
+div.lib_banner .content a:hover {
+	background-size: 100%;
+}
+
+/* **************************** Responsive Media **************************** */
+
+@media (max-width: 1240px) {
+	section#dev_library {
+		grid-template-columns: repeat(1, 1fr);
+		gap: 2rem;
+	}
+}
+
+@media (max-width: 768px) {
+	section#dev_library div.lib_banner {
+		padding: 2rem;
+		height: auto;
+		align-items: flex-start;
+		flex-direction: column;
+	}
+	div.lib_banner .figure {
+		position: relative;
+		opacity: 1;
+		z-index: 1;
+	}
+	div.lib_banner .figure object {
+		width: 20rem;
+		transform: translateX(0) scale(0.9);
+	}
+	div.lib_banner:hover .figure object {
+		transform: translateX(0) scale(1);
+	}
+
+	div.lib_banner .content {
+		margin: 2rem 0;
+		width: 100%;
+	}
+}
+
+@media (max-width: 572px) {
+	div.lib_banner .figure object {
+		width: 10rem;
+	}
+	div.lib_banner .content h2 {
+		font-size: 3.5rem;
+		-webkit-text-stroke: 0.5px var(--primarywhite);
+	}
+	div.lib_banner .content a {
+		padding: 0.6rem 2rem;
+	}
+}
+
+/* **************************** Styles End **************************** */

@@ -1,0 +1,189 @@
+/* **************************** Libraries Page Styles **************************** */
+
+section#libraries {
+	position: relative;
+	margin: 10rem auto;
+}
+
+/* **************************** Search Bar **************************** */
+
+section#libraries form.searchbar {
+	position: relative;
+	margin: 6rem auto;
+	width: 90%;
+}
+
+section#libraries form.searchbar input {
+	margin: auto;
+	padding: 2.5rem 1.5rem;
+	font-size: 2rem;
+	font-weight: 500;
+	font-family: var(--textfont);
+	color: var(--primarywhite);
+	background: transparent;
+	border: 3px solid var(--primarygrey);
+	letter-spacing: 0.6px;
+	border-radius: 6px;
+	box-shadow: none;
+	transition: all 0.2s ease-in-out;
+}
+
+section#libraries form.searchbar input:focus,
+section#libraries form.searchbar input:not(:placeholder-shown) {
+	border: 3px solid var(--tertiarycolor);
+}
+
+/* **************************** Library Card **************************** */
+
+section#libraries div.libraries {
+	margin: 4rem auto;
+	width: 90%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 3rem;
+}
+
+div.libraries .lib_card {
+	position: relative;
+	margin: auto;
+	padding: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: var(--secondaryBg);
+	width: -webkit-fill-available;
+	height: -webkit-fill-available;
+	border-radius: 6px;
+	box-shadow: 0 0 4px rgb(0, 0, 0, 0.6);
+}
+
+div.libraries .lib_card::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 4px solid var(--tertiarycolor);
+	opacity: 0;
+	border-radius: 6px;
+	transition: all 0.3s ease-in-out;
+}
+
+div.libraries .lib_card:hover:before {
+	opacity: 1;
+}
+
+div.libraries .lib_card h2 {
+	margin: 1rem auto;
+	font-size: 2.6rem;
+	font-weight: 500;
+	font-family: var(--textfont);
+	color: var(--primarywhite);
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+div.libraries .lib_card p {
+	margin: 0.5rem auto;
+	font-size: 1.8rem;
+	font-weight: 400;
+	font-family: var(--textfont);
+	color: var(--primarygrey);
+	text-align: center;
+	letter-spacing: 0.8px;
+	line-height: 1.5;
+}
+
+div.libraries .lib_card a.lib_link {
+	position: relative;
+	margin: 1rem auto;
+	padding: 0.8rem 2rem;
+	font-size: 1.9rem;
+	font-weight: 600;
+	font-family: var(--textfont);
+	color: var(--tertiarycolor);
+	text-align: center;
+	letter-spacing: 0.8px;
+	text-transform: uppercase;
+	border-radius: 4px;
+	z-index: 1;
+}
+
+div.libraries .lib_card a.lib_link::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 3px solid var(--tertiarycolor);
+	opacity: 0;
+	border-radius: 4px;
+	z-index: 1;
+	transition: all 0.3s ease-in-out;
+}
+
+div.libraries .lib_card a.lib_link::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--tertiarycolor);
+	border-radius: 4px;
+	z-index: -1;
+	clip-path: inset(100% 0 0 0);
+}
+
+div.libraries .lib_card a.lib_link:hover {
+	animation: colorPath 0.8s cubic-bezier(0.87, 0, 0.13, 1);
+}
+div.libraries .lib_card a.lib_link:hover:before {
+	opacity: 1;
+}
+div.libraries .lib_card a.lib_link:hover:after {
+	animation: clipPath 0.8s cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+@keyframes clipPath {
+	0% {
+		clip-path: inset(100% 0 0 0);
+	}
+	50% {
+		clip-path: inset(0 0 0 0);
+	}
+	100% {
+		clip-path: inset(0 0 100% 0);
+	}
+}
+
+@keyframes colorPath {
+	0% {
+		color: var(--tertiarycolor);
+	}
+	50% {
+		color: var(--primaryblack);
+	}
+	100% {
+		color: var(--tertiarycolor);
+	}
+}
+
+/* **************************** Responsive Media **************************** */
+
+@media (max-width: 992px) {
+	section#libraries div.libraries {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 572px) {
+	section#libraries div.libraries {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+/* **************************** Styles End **************************** */
