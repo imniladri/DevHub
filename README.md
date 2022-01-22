@@ -1,5 +1,3 @@
-<div id="top"></div>
-
 <!-- PROJECT SHIELDS -->
 <!--
 <div align="center">
@@ -13,45 +11,24 @@
 
 </div>
 -->
-
 <br />
+
 <!-- PROJECT LOGO -->
-
+<h1 align = "center">Dev Hub: A Awesome Hub for all Developers</h1>
 <div align="center">
-<a href="https://devohub.vercel.app/">
-    <img src="./client/img/logo.svg" alt="Logo" width="100" />
-</a>
-
-<h2 align="center">Dev Hub</h2>
-
-<p align="center">
-    A awesome hub for all developers have all kind of dev libraries & packages.
-    <br />
-    <a href="https://github.com/imniladri/DevHub"><strong>Explore Repo</strong></a>
-    <br />
-    <br />
-    <a href="https://devohub.vercel.app/">View Demo</a>
-    ·
-    <a href="https://github.com/imniladri/DevHub/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/imniladri/DevHub/issues">Request Feature</a>
-</p>
+    <img src="./client/assets/DevHub-Window.png" alt="Frame" width="800" />
 </div>
-
 <div align="center">
-
-![](https://forthebadge.com/images/badges/built-with-love.svg)
-
+    <img src="https://forthebadge.com/images/badges/built-with-love.svg">
+    <img src="https://forthebadge.com/images/badges/powered-by-coffee.svg">
+    <img src="https://forthebadge.com/images/badges/open-source.svg">
+    
 </div>
 <br />
+
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
-
-<div align="center">
-    <img src="./client/assets/DevHub-Window.png" alt="Frame" width="700" />
-</div>
-<br />
 
 Dev Hub is a coolest hub for all developers to get any kind of libraries & packages. And it's very easy and fast way to get them all in one place. We will include more libraries for each section & update soon. Also we are working on some cool code snippets that are used daily on live projects.
 
@@ -59,13 +36,9 @@ Libraries for CSS, JS, ICON, IMAGES, ANDROID, ML, API etc.
 
 Note: `Next Js` version coming soon with more features, under development.
 
-<div align="right">
+<!-- BUILT WITH -->
 
-[![](https://img.shields.io/badge/Back_To_Top-fff?style=flat)](#top)
-
-</div>
-
-### Built With
+## Built With
 
 All Tech Stacks that are using in this project:
 
@@ -80,12 +53,6 @@ Other tools you need know:
 -   Illustrator
 
 Here it seems that the main moto is to make the frontend awesome.
-
-<div align="right">
-
-[![](https://img.shields.io/badge/Back_To_Top-fff?style=flat)](#top)
-
-</div>
 
 <!-- FOLDER STRUCTURE -->
 
@@ -118,19 +85,11 @@ Here it seems that the main moto is to make the frontend awesome.
 -   Try to maintain proper file names.
 -   Don't use capital or spaces for files names instead use `_` or `-`.
 
-<div align="right">
-
-[![](https://img.shields.io/badge/Back_To_Top-fff?style=flat)](#top)
-
-</div>
-
 <!-- GETTING STARTED -->
 
 ## Getting Started
 
 Please follow these simple steps to start working:
-
-### Installation
 
 1. Fork this Repo.
 2. Clone your forked copy of the project. Change `{your_username}` with your github username.
@@ -140,27 +99,15 @@ Please follow these simple steps to start working:
 3. Navigate to your project directory and open it in your code editor.
 4. Always take a pull from the upstream repository to your main branch to keep it at par with the main project (updated repository).
 5. Create your new feature branch ( `git checkout -b feature/AmazingFeature` ).
-6. Start making your changes.
-
-### Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. After making changes.
-2. Add your Changes ( `git add .` ).
-3. Commit your Changes ( `git commit -m '{add some message}'` ).
-4. Push to the Branch ( `git push origin {your_branch}` ).
-5. Open a Pull Request.
+6. Start making your changes & after making changes.
+7. Add your Changes ( `git add .` ).
+8. Commit your Changes ( `git commit -m '{add some message}'` ).
+9. Push to the Branch ( `git push origin {your_branch}` ).
+10. Open a Pull Request.
 
 ### Add Your Name
 
 Once you make your contribution, do not forget to add your name in `CONTRIBUTING.MD` file. Further instructions are mentioned there.
-
-<div align="right">
-
-[![](https://img.shields.io/badge/Back_To_Top-fff?style=flat)](#top)
-
-</div>
 
 <!-- ROADMAP -->
 
@@ -175,39 +122,6 @@ See the [open issues](https://github.com/imniladri/DevHub/issues) for a full lis
 -   [ ] More Features for More Interactivity in Site.
 -   [ ] Developing in `Next Js` with more features.
 
-<div align="right">
-
-[![](https://img.shields.io/badge/Back_To_Top-fff?style=flat)](#top)
-
-</div>
-
-<!-- CONTRIBUTORS -->
-
-## Contributors
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-Go To <a href="getting-started">Getting Started</a>.
-
-<div align="right">
-
-[![](https://img.shields.io/badge/Back_To_Top-fff?style=flat)](#top)
-
-</div>
-
-<!-- LICENSE -->
-
-## License
-
-clientributed under the MIT License. See `LICENSE` for more information.
-
-<div align="right">
-
-[![](https://img.shields.io/badge/Back_To_Top-fff?style=flat)](#top)
-
-</div>
-
 <!-- CONTACT -->
 
 ## Contact
@@ -217,12 +131,6 @@ clientributed under the MIT License. See `LICENSE` for more information.
 [![](https://img.shields.io/badge/Skype_Me-00AFF0?style=for-the-badge)](https://join.skype.com/invite/x4ZrtKrM5uyv)
 [![](https://img.shields.io/badge/Mail_Me-1A374D?style=for-the-badge)](imniladrimondal@gmail.com)
 [![](https://img.shields.io/badge/Project_Link-EF4041?style=for-the-badge)](https://github.com/imniladri/DevHub)
-
-<div align="right">
-
-[![](https://img.shields.io/badge/Back_To_Top-fff?style=flat)](#top)
-
-</div>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
