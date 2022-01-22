@@ -29,7 +29,7 @@ div.dev_banner .img_svg .banner {
 	width: 100%;
 	height: 100%;
 	opacity: 0.2;
-	background: url(/img/banner.svg) no-repeat center / cover;
+	background: url(../../img/banner.svg) no-repeat center / cover;
 }
 
 div.dev_banner .img_svg img:nth-child(1) {

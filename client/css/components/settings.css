@@ -118,17 +118,17 @@ a.btn:focus {
 
 @font-face {
 	font-family: "Blanka";
-	src: url("/fonts/Blanka.otf");
+	src: url("../../fonts/Blanka.otf");
 }
 
 @font-face {
 	font-family: "Do4Brain";
-	src: url("/fonts/Do4Brain.ttf");
+	src: url("../../fonts/Do4Brain.ttf");
 }
 
 @font-face {
 	font-family: "StudioFeixen";
-	src: url("/fonts/StudioFeixen.ttf");
+	src: url("../../fonts/StudioFeixen.ttf");
 }
 
 /* **************************** Swal Alert **************************** */

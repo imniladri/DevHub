@@ -52,8 +52,8 @@ $("a.btn_back").click(() => {
 
 $(window).ready(function () {
     if (screen.width < 992) {
-        $("object.text").attr("data", "/img/text_portrait.svg");
+        $("object.text").attr("data", "./img/text_portrait.svg");
     } else {
-        $("object.text").attr("data", "/img/text_landscape.svg");
+        $("object.text").attr("data", "./img/text_landscape.svg");
     }
 });
