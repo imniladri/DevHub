@@ -89,23 +89,17 @@ Here it seems that the main moto is to make the frontend awesome.
 
 Please follow these simple steps to start working:
 
-1. Fork this Repo.
-2. Clone your forked copy of the project. Change `{your_username}` with your github username.
-    ```sh
-    git clone https://github.com/{your_username}/DevHub.git
-    ```
+1. If you want to work on issue then comment, then if you get assigned.
+2. Fork this Repo and clone your forked copy of the project.
 3. Navigate to your project directory and open it in your code editor.
 4. Always take a pull from the upstream repository to your main branch to keep it at par with the main project (updated repository).
-5. Create your new feature branch ( `git checkout -b feature/AmazingFeature` ).
+5. Create a new branch and name it as according to the issue.
 6. Start making your changes & after making changes.
-7. Add your Changes ( `git add .` ).
-8. Commit your Changes ( `git commit -m '{add some message}'` ).
-9. Push to the Branch ( `git push origin {your_branch}` ).
-10. Open a Pull Request.
+7. Open a Pull Request with a name of the issue and describe about your changes with reasons.
 
 ### Add Your Name
 
-Once you make your contribution, do not forget to add your name in `CONTRIBUTING.MD` file. Further instructions are mentioned there.
+Once your PR got merged, do not forget to add your name in `CONTRIBUTING` file. Further instructions are mentioned there.
 
 <!-- ROADMAP -->
 
