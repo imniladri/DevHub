@@ -10,8 +10,8 @@
 [![Skype][skype-shield]][skype-url]
 
 </div>
--->
 <br />
+-->
 
 <!-- PROJECT LOGO -->
 <h1 align = "center">Dev Hub: A Awesome Hub for all Developers</h1>
@@ -19,12 +19,10 @@
     <img src="./client/assets/DevHub-Window.png" alt="Frame" width="800" />
 </div>
 <div align="center">
-    <img src="https://forthebadge.com/images/badges/built-with-love.svg">
-    <img src="https://forthebadge.com/images/badges/powered-by-coffee.svg">
-    <img src="https://forthebadge.com/images/badges/open-source.svg">
-    
+    <img src="https://forthebadge.com/images/badges/built-with-love.svg" />
+    <img src="https://forthebadge.com/images/badges/powered-by-coffee.svg" />
+    <img src="https://forthebadge.com/images/badges/open-source.svg" />
 </div>
-<br />
 
 <!-- ABOUT THE PROJECT -->
 
@@ -129,7 +127,7 @@ See the [open issues](https://github.com/imniladri/DevHub/issues) for a full lis
 ### [Niladri Mondal](https://imniladri.in/)
 
 [![](https://img.shields.io/badge/Skype_Me-00AFF0?style=for-the-badge)](https://join.skype.com/invite/x4ZrtKrM5uyv)
-[![](https://img.shields.io/badge/Mail_Me-1A374D?style=for-the-badge)](imniladrimondal@gmail.com)
+[![](https://img.shields.io/badge/Mail_Me-1A374D?style=for-the-badge)](mailto:imniladrimondal@gmail.com)
 [![](https://img.shields.io/badge/Project_Link-EF4041?style=for-the-badge)](https://github.com/imniladri/DevHub)
 
 <!-- MARKDOWN LINKS & IMAGES -->
