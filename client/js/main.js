@@ -57,3 +57,32 @@ $(window).ready(function () {
         $("object.text").attr("data", "./img/text_landscape.svg");
     }
 });
+
+// Set Theme for Theme Picker Buttons
+
+function setTheme(name) {
+    document.querySelector(`.${name}`).onclick = () => {
+        const root = document.documentElement;
+        root.style.setProperty('--primarycolor', `var(--primarycolor${name})`);
+        root.style.setProperty('--secondarycolor', `var(--secondarycolor${name})`);
+        root.style.setProperty('--tertiarycolor', `var(--tertiarycolor${name})`);
+        localStorage.setItem('theme', `${name}`);
+    };
+}
+
+setTheme('theme1');
+setTheme('theme2');
+setTheme('theme3');
+setTheme('theme4');
+
+// Set Theme for Page Reloads
+
+function fetchTheme(name) {
+    const root = document.documentElement;
+    root.style.setProperty('--primarycolor', `var(--primarycolor${name})`);
+    root.style.setProperty('--secondarycolor', `var(--secondarycolor${name})`);
+    root.style.setProperty('--tertiarycolor', `var(--tertiarycolor${name})`);
+    localStorage.setItem('theme', `${name}`);
+}
+
+localStorage.getItem('theme') === null ? fetchTheme('theme1') : fetchTheme(localStorage.getItem('theme'));
