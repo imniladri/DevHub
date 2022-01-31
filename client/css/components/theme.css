@@ -1,0 +1,24 @@
+:root {
+    /* Theme Colors */
+    --warningcolor: #ff005c;
+
+    /* Theme 1 */
+    --primarycolortheme1: #0689ff;
+    --secondarycolortheme1: #3347ff;
+    --tertiarycolortheme1: #fff133;
+
+    /* Theme 2 */
+    --primarycolortheme2: #7868E6;
+    --secondarycolortheme2: #6930C3;
+    --tertiarycolortheme2: #49FF00;
+
+    /* Theme 3 */
+    --primarycolortheme3: #750550;
+    --secondarycolortheme3: #4C0027;
+    --tertiarycolortheme3: #df1de6;
+
+    /* Theme 4 */
+    --primarycolortheme4: #20cfb5;
+    --secondarycolortheme4: #148b86;
+    --tertiarycolortheme4: #2156e7;
+}
