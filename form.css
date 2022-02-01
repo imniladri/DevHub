@@ -1,19 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Outfit:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-  textfont: "Outfit", sans-serif;
+  font-family: "Outfit", sans-serif;
+  textfont: "Montserrat", sans-serif;
 
 }
 body{
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
-  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  background: linear-gradient(165deg, #1b1d25, #0689ff);
 }
 .container{
   max-width: 700px;
@@ -27,7 +28,7 @@ body{
   font-size: 40px;
   font-weight: 800;
   position: relative;
-  top: 150px;
+  top: 4px;
   
 }
 .container .title::before{
@@ -36,15 +37,15 @@ body{
   left: 0;
   bottom: 0;
   height: 5px;
-  width: 66px;
+  width: 74.5px;
   border-radius: 5px;
-  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  background: linear-gradient(165deg, #1b1d25, #0689ff);
 }
 .content form .user-details{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 170px 0 20px 0;
+  margin: 40px 0 20px 0;
 }
 form .user-details .input-box{
   margin-bottom: 15px;
@@ -69,7 +70,7 @@ form .input-box span.details{
 }
 .user-details .input-box input:focus,
 .user-details .input-box input:valid{
-  border-color: #9b59b6;
+  border-color: #0689ff;
 }
 form .category-details .category-title{
   font-size: 21px;
@@ -79,7 +80,7 @@ form .category-details .category-title{
  form .category{
    display: flex;
    width: 10%;
-   margin: 18px 0 ;
+   margin: 16px 0 ;
    justify-content: space-between;
  }
  form .category label{
@@ -88,10 +89,10 @@ form .category-details .category-title{
    cursor: pointer;
  }
  form .category label .dot{
-  height: 17px;
+  height: 18px;
   width: 18px;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-right: 7px;
   margin-left: 8px;
   background: #d9d9d9;
   border: 5px solid transparent;
@@ -99,8 +100,14 @@ form .category-details .category-title{
 }
  #dot-1:checked ~ .category label .one,
  #dot-2:checked ~ .category label .two,
- #dot-3:checked ~ .category label .three{
-   background: #9b59b6;
+ #dot-3:checked ~ .category label .three,
+ #dot-4:checked ~ .category label .four,
+ #dot-5:checked ~ .category label .five,
+ #dot-6:checked ~ .category label .six,
+ #dot-7:checked ~ .category label .seven,
+ #dot-8:checked ~ .category label .eight
+{
+   background: #3347ff;
    border-color: #d9d9d9;
  }
  form input[type="radio"]{
@@ -121,11 +128,11 @@ form .category-details .category-title{
    letter-spacing: 1px;
    cursor: pointer;
    transition: all 0.3s ease;
-   background: linear-gradient(135deg, #71b7e6, #9b59b6);
+   background: linear-gradient(165deg, #1b1d25, #0689ff);
  }
  form .button input:hover{
   /* transform: scale(0.99); */
-  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  background: linear-gradient(-165deg, #1b1d25, #0689ff);
   }
  @media(max-width: 584px){
  .container{
