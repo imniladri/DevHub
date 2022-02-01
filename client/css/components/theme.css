@@ -1,0 +1,27 @@
+/* Theme Store */
+/* Whenever a theme is added please add a correspoding button on footer and also call setTheme() in main.js */
+
+:root {
+    /* Theme Colors */
+    --warningcolor: red;
+
+    /* Theme 1 */
+    --primarycolortheme1: #0689ff;
+    --secondarycolortheme1: #3347ff;
+    --tertiarycolortheme1: #fff133;
+
+    /* Theme 2 */
+    --primarycolortheme2: #B762C1;
+    --secondarycolortheme2: #8946A6;
+    --tertiarycolortheme2: #49FF00;
+
+    /* Theme 3 */
+    --primarycolortheme3: #FF9F45;
+    --secondarycolortheme3: #F76E11;
+    --tertiarycolortheme3: #FC4F4F;
+
+    /* Theme 4 */
+    --primarycolortheme4: #20cfb5;
+    --secondarycolortheme4: #148b86;
+    --tertiarycolortheme4: #2156e7;
+}

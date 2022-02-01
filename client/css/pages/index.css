@@ -50,15 +50,7 @@ div.dev_banner .img_svg img:nth-child(2) {
 
 /* **************************** Index Banner Texts **************************** */
 
-section#dev_banner div.dev_banner .text_svg {
-	margin: auto;
-	position: relative;
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	flex-direction: column;
-}
-
+/* Banner Heading */
 section#dev_banner div.dev_banner .text_svg h1 {
 	margin: 1rem auto;
 	font-size: 4rem;
@@ -76,7 +68,46 @@ section#dev_banner div.dev_banner .text_svg h1.active {
 	letter-spacing: 0.5rem;
 }
 
-section#dev_banner div.dev_banner object.logo {
+/* Logo SVG */
+.a {
+	fill: url(#a);
+}
+.b {
+	fill: url(#b);
+}
+.c {
+	fill: url(#c);
+}
+.d {
+	fill: url(#d);
+}
+.e {
+	fill: url(#e);
+}
+.f {
+	fill: url(#f);
+}
+.g {
+	fill: url(#g);
+}
+.h {
+	fill: url(#h);
+}
+.i {
+	fill: url(#i);
+}
+
+section#dev_banner div.dev_banner div.text_svg stop#logoOffset0 {
+	stop-color: var(--primarycolor);
+}
+section#dev_banner div.dev_banner div.text_svg stop#logoOffset51 {
+	stop-color: var(--secondarycolor);
+}
+section#dev_banner div.dev_banner div.text_svg stop#logoOffset100 {
+	stop-color: var(--secondarycolor);
+}
+
+section#dev_banner div.dev_banner div.logo {
 	margin: 3rem auto;
 	width: 23rem;
 	height: auto;
@@ -85,16 +116,100 @@ section#dev_banner div.dev_banner object.logo {
 	transition: all 0.6s cubic-bezier(0.35, 1.95, 0.51, 0.66);
 }
 
-section#dev_banner div.dev_banner object.text {
+section#dev_banner div.dev_banner div.logo.active {
+	opacity: 1;
+	transform: scale(1);
+}
+
+/* Text SVG */
+div.text svg {
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease;
+}
+
+div.text svg.loaded {
+	opacity: 1;
+	visibility: visible;
+}
+
+div.text svg.loaded path,
+div.text svg.loaded polyline {
+	fill: none;
+	stroke: url(#grad);
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-width: 4px;
+}
+
+@keyframes line {
+	0% {
+		stroke-dasharray: 50;
+	}
+	50% {
+		stroke-dasharray: 100;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+
+div.text svg.loaded path#D {
+	stroke-dasharray: 320;
+	stroke-dashoffset: 320;
+	animation: line 10s cubic-bezier(0.35, 1.95, 0.51, 0.66) forwards 0.2s;
+}
+div.text svg.loaded polyline#E {
+	stroke-dasharray: 350;
+	stroke-dashoffset: 350;
+	animation: line 10s cubic-bezier(0.35, 1.95, 0.51, 0.66) forwards 0.6s;
+}
+div.text svg.loaded polyline#V {
+	stroke-dasharray: 254;
+	stroke-dashoffset: 254;
+	animation: line 10s cubic-bezier(0.35, 1.95, 0.51, 0.66) forwards 1.2s;
+}
+
+div.text svg.loaded polyline#H {
+	stroke-dasharray: 272;
+	stroke-dashoffset: 272;
+	animation: line 10s cubic-bezier(0.35, 1.95, 0.51, 0.66) forwards 1.5s;
+}
+div.text svg.loaded path#U {
+	stroke-dasharray: 285;
+	stroke-dashoffset: 285;
+	animation: line 10s cubic-bezier(0.35, 1.95, 0.51, 0.66) forwards 1.8s;
+}
+div.text svg.loaded path#B {
+	stroke-dasharray: 350;
+	stroke-dashoffset: 350;
+	animation: line 10s cubic-bezier(0.35, 1.95, 0.51, 0.66) forwards 2s;
+}
+
+section#dev_banner div.dev_banner .text_svg {
+	margin: auto;
+	position: relative;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+}
+
+section#dev_banner div.dev_banner div.text {
 	margin: 2rem auto;
 	padding: 0 2rem;
 	width: 100rem;
 	height: auto;
 }
 
-section#dev_banner div.dev_banner object.logo.active {
-	opacity: 1;
-	transform: scale(1);
+section#dev_banner div.dev_banner div.text_svg stop#textOffset0 {
+	stop-color: var(--primarycolor);
+	stop-opacity: 1;
+}
+
+section#dev_banner div.dev_banner div.text_svg stop#textOffset100 {
+	stop-color: var(--secondarycolor);
+	stop-opacity: 1;
 }
 
 /* **************************** Responsive Media **************************** */
@@ -103,27 +218,27 @@ section#dev_banner div.dev_banner object.logo.active {
 	section#dev_banner div.dev_banner .text_svg h1 {
 		letter-spacing: 2rem;
 	}
-	section#dev_banner div.dev_banner object.logo {
+	section#dev_banner div.dev_banner div.logo {
 		width: 20rem;
 	}
-	section#dev_banner div.dev_banner object.text {
+	section#dev_banner div.dev_banner div.text {
 		padding: 0 4rem;
 		width: 70rem;
 	}
 }
 
 @media (max-width: 768px) {
-	section#dev_banner div.dev_banner object.logo {
+	section#dev_banner div.dev_banner div.logo {
 		width: 14rem;
 	}
-	section#dev_banner div.dev_banner object.text {
-		width: 100%;
+	section#dev_banner div.dev_banner div.text {
+		width: 48rem;
 	}
 }
 
 @media (max-width: 572px) {
-	section#dev_banner div.dev_banner object.text {
-		width: 80%;
+	section#dev_banner div.dev_banner div.text {
+		width: 32rem;
 	}
 }
 

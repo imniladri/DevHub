@@ -28,10 +28,54 @@ header nav a.nav_brand {
 	user-select: none;
 }
 
-header nav a.nav_brand img {
+/* header nav a.nav_brand img {
 	margin: auto 0.2rem;
 	width: 4rem;
 	height: auto;
+} */
+
+header nav a.nav_brand svg {
+	margin: auto 0.2rem;
+	width: 4rem;
+	height: auto;
+}
+
+.a {
+	fill: url(#a);
+}
+.b {
+	fill: url(#b);
+}
+.c {
+	fill: url(#c);
+}
+.d {
+	fill: url(#d);
+}
+.e {
+	fill: url(#e);
+}
+.f {
+	fill: url(#f);
+}
+.g {
+	fill: url(#g);
+}
+.h {
+	fill: url(#h);
+}
+.i {
+	fill: url(#i);
+}
+
+stop#logoOffset0 {
+	stop-color: var(--primarycolor);
+}
+stop#logoOffset51 {
+	stop-color: var(--secondarycolor);
+}
+stop#logoOffset100 {
+	stop-color: var(--secondarycolor);
 }
 
 header nav a.nav_brand h4 {

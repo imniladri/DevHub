@@ -19,6 +19,7 @@
 @import url(./header.css);
 @import url(./footer.css);
 @import url(./loader.css);
+@import url(./theme.css);
 
 /* **************************** Site General Settings **************************** */
 
@@ -66,11 +67,10 @@ body {
 	--primaryBg: #1b1d25;
 	--secondaryBg: #21222d;
 
-	/* Theme Colors */
-	--primarycolor: #0689ff;
-	--secondarycolor: #3347ff;
-	--tertiarycolor: #fff133;
-	--warningcolor: #ff005c;
+	/* Default Theme */
+	--primarycolor: var(--primarycolortheme1);
+	--secondarycolor: var(--secondarycolortheme1);
+	--tertiarycolor: var(--tertiarycolortheme1);
 
 	/* Default Fonts */
 	--mainfont: "Montserrat", sans-serif;
