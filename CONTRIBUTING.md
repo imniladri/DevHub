@@ -17,3 +17,4 @@ We love your input! We want to make contributing to this project as easy and tra
 
 1.  [ARKA PROVO SEN](https://github.com/polarizz17)
 2.  [Mridul Dey](https://github.com/mridul4101)
+3.  [Srijita Mandal](https://github.com/Srijita-Mandal)
