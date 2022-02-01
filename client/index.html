@@ -1,230 +1,427 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<!-- Site Title & Favicon-->
+		<title>Dev Hub</title>
+		<link rel="icon" type="image/x-icon" href="./img/favicon.ico?v=1" />
 
-<head>
-    <!-- Site Title & Favicon-->
-    <title>Dev Hub</title>
-    <link rel="icon" type="image/x-icon" href="./img/favicon.ico?v=1" />
+		<!-- Meta Viewport Set -->
+		<meta charset="UTF-8" />
+		<meta http-equiv="Content-Type" content="text/html" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Meta Viewport Set -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="Content-Type" content="text/html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Meta Author, Description, Keywords -->
+		<meta name="author" content="Niladri Mondal" />
+		<meta name="description" content="Welcome to Dev Hub" />
+		<meta name="keywords" content="Developer, Design, Library, Hub, Package" />
 
-    <!-- Meta Author, Description, Keywords -->
-    <meta name="author" content="Niladri Mondal" />
-    <meta name="description" content="Welcome to Dev Hub" />
-    <meta name="keywords" content="Developer, Design, Library, Hub, Package" />
+		<!-- Meta OG: Site, Title, Description, Image Displayed -->
+		<meta property="og:site_name" content="DEVHUB" />
+		<meta property="og:title" content="Dev Hub" />
+		<meta property="og:description" content="Welcome to Dev Hub" />
+		<meta property="og:image" content="https://devohub.vercel.app/img/logo.png" />
 
-    <!-- Meta OG: Site, Title, Description, Image Displayed -->
-    <meta property="og:site_name" content="DEVHUB" />
-    <meta property="og:title" content="Dev Hub" />
-    <meta property="og:description" content="Welcome to Dev Hub" />
-    <meta property="og:image" content="https://devohub.vercel.app/img/logo.png" />
+		<!-- Icons -->
+		<link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" />
 
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" />
+		<!-- Tab Color -->
+		<!-- Mobile -->
+		<meta name="theme-color" content="#1b1d25" />
+		<!-- Windows -->
+		<meta name="msapplication-navbutton-color" content="#1b1d25" />
 
-    <!-- Tab Color -->
-    <!-- Mobile -->
-    <meta name="theme-color" content="#1b1d25" />
-    <!-- Windows -->
-    <meta name="msapplication-navbutton-color" content="#1b1d25" />
+		<!-- EXTERNAL CSS -->
+		<link rel="stylesheet" href="./css/libraries/bootstrap.min.css" />
 
-    <!-- EXTERNAL CSS -->
-    <link rel="stylesheet" href="./css/libraries/bootstrap.min.css" />
+		<!-- MAIN CSS -->
+		<link rel="stylesheet" href="./css/components/settings.css" />
+		<link rel="stylesheet" href="./css/pages/index.css" />
 
-    <!-- MAIN CSS -->
-    <link rel="stylesheet" href="./css/components/settings.css" />
-    <link rel="stylesheet" href="./css/pages/index.css" />
+		<!-- EXTERNAL JS -->
+		<script defer src="./js/libraries/jquery-3.6.0.min.js"></script>
+		<script defer src="./js/libraries/bootstrap.min.js"></script>
+		<script defer src="./js/libraries/sweetalert.min.js"></script>
 
-    <!-- EXTERNAL JS -->
-    <script defer src="./js/libraries/jquery-3.6.0.min.js"></script>
-    <script defer src="./js/libraries/bootstrap.min.js"></script>
-    <script defer src="./js/libraries/sweetalert.min.js"></script>
+		<!-- MAIN JS -->
+		<script defer src="./js/main.js"></script>
+	</head>
 
-    <!-- MAIN JS -->
-    <script defer src="./js/main.js"></script>
+	<body>
+		<!-- Preloader Start -->
+		<div id="preloader">
+			<div class="loader">
+				<div class="dot-1"></div>
+				<div class="dot-2"></div>
+				<div class="dot-3"></div>
+			</div>
+		</div>
+		<!-- Preloader End -->
 
-</head>
+		<!-- Banner Start -->
+		<section id="dev_banner">
+			<div class="dev_banner">
+				<div class="img_svg">
+					<img src="./img/wave_svg_1.svg" alt="" />
+					<img src="./img/wave_svg_2.svg" alt="" />
+					<div class="banner"></div>
+				</div>
 
-<body>
+				<div class="text_svg">
+					<h1 class="loaded">WELCOME</h1>
 
-    <!-- Preloader Start -->
-    <div id="preloader">
-        <div class="loader">
-            <div class="dot-1"></div>
-            <div class="dot-2"></div>
-            <div class="dot-3"></div>
-        </div>
-    </div>
-    <!-- Preloader End -->
+					<div class="logo loaded">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							viewBox="0 0 319.88 304"
+						>
+							<defs>
+								<linearGradient
+									id="a"
+									x1="274.67"
+									x2="274.67"
+									y1="10.89"
+									y2="284.4"
+									gradientUnits="userSpaceOnUse"
+								>
+									<stop offset="0" id="logoOffset0"/>
+									<stop offset=".51" id="logoOffset51"/>
+									<stop offset="1" id="logoOffset100"/>
+								</linearGradient>
 
-    <!-- Banner Start -->
-    <section id="dev_banner">
-        <div class="dev_banner">
+								<linearGradient
+									id="b"
+									x1="143.45"
+									x2="143.45"
+									y1="10.89"
+									y2="284.38"
+									xlink:href="#a"
+								/>
 
-            <div class="img_svg">
-                <img src="./img/wave_svg_1.svg" alt="" />
-                <img src="./img/wave_svg_2.svg" alt="" />
-                <div class="banner"></div>
-            </div>
+								<linearGradient
+									id="c"
+									x1="305.26"
+									x2="305.26"
+									y1="10.89"
+									y2="284.4"
+									xlink:href="#a"
+								/>
+								<linearGradient
+									id="d"
+									x1="242.7"
+									x2="242.7"
+									y1="10.89"
+									y2="284.39"
+									xlink:href="#a"
+								/>
+								<linearGradient
+									id="e"
+									x1="960.17"
+									x2="960.17"
+									y1="358.58"
+									y2="632.12"
+									xlink:href="#a"
+								/>
+								<linearGradient
+									id="f"
+									x1="930.02"
+									x2="930.02"
+									y1="358.59"
+									y2="632.1"
+									xlink:href="#a"
+								/>
+								<linearGradient
+									id="g"
+									x1="934.95"
+									x2="934.95"
+									y1="358.66"
+									y2="632.09"
+									xlink:href="#a"
+								/>
+								<linearGradient
+									id="h"
+									x1="867.96"
+									x2="867.96"
+									y1="358.58"
+									y2="632.11"
+									xlink:href="#a"
+								/>
+								<linearGradient
+									id="i"
+									x1="970.79"
+									x2="970.79"
+									y1="358.61"
+									y2="632.09"
+									xlink:href="#a"
+								/>
+							</defs>
+							<title>logo</title>
+							<polygon
+								points="257.58 133.07 240.47 103.45 257.58 73.84 291.78 73.84 308.88 103.45 291.78 133.07 257.58 133.07"
+								class="a"
+							/>
+							<polygon
+								points="129.59 65.99 115.69 41.96 129.59 17.93 157.32 17.93 171.2 41.96 157.32 65.99 129.59 65.99"
+								class="b"
+							/>
+							<polygon
+								points="297.95 25.31 290.65 12.65 297.95 0 312.56 0 319.88 12.65 312.56 25.31 297.95 25.31"
+								class="c"
+							/>
+							<polygon
+								points="230.97 41.84 219.24 21.53 230.97 1.21 254.42 1.21 266.16 21.53 254.42 41.84 230.97 41.84"
+								class="d"
+							/>
+							<path
+								d="M967.06,485.74a6.89,6.89,0,1,0-6.9,6.89A6.9,6.9,0,0,0,967.06,485.74Z"
+								class="e"
+								transform="translate(-788.99 -347.7)"
+							/>
+							<path
+								d="M987.17,556.61l25.13,41.25,16.67,4.58,42.08-72.88-15-26h-24.6L1001,450.77l12.3-21.31-12.72-22H976.88L960.09,436.5H904.77L888,407.43H859.5l-24.42,42.3,32.07,49.79c.28,0,.53-.08.82-.08a17.22,17.22,0,1,1-17.23,17.22,17,17,0,0,1,4-10.92l-27.45-42.56L789,529.56l37,64.09,77.69-51.11,9.71-35.37,2.29-1.42,27.57-17.11a16.39,16.39,0,0,1-.3-2.9,17.23,17.23,0,1,1,7.66,14.32,27.86,27.86,0,0,1-3,2.06L925.26,516l-9.71,35.32L832.89,605.6l19.19,33.24,65.73-41.55c0-.26-.08-.52-.08-.79A17.23,17.23,0,1,1,935,613.72a17,17,0,0,1-11-4l-65,41.1.52.92h141l21.31-36.92-18.39-5.06-1.43-2.28S974.2,561.84,973.68,561a17.16,17.16,0,1,1,11.43-7.38A30,30,0,0,1,987.17,556.61Z"
+								class="f"
+								transform="translate(-788.99 -347.7)"
+							/>
+							<path
+								d="M941.84,596.5a6.89,6.89,0,1,0-6.89,6.88A6.9,6.9,0,0,0,941.84,596.5Z"
+								class="g"
+								transform="translate(-788.99 -347.7)"
+							/>
+							<path
+								d="M874.86,516.66a6.9,6.9,0,1,0-6.89,6.89A6.9,6.9,0,0,0,874.86,516.66Z"
+								class="h"
+								transform="translate(-788.99 -347.7)"
+							/>
+							<path
+								d="M963.9,544.09a6.9,6.9,0,1,0,6.88-6.89A6.89,6.89,0,0,0,963.9,544.09Z"
+								class="i"
+								transform="translate(-788.99 -347.7)"
+							/>
+						</svg>
+					</div>
 
-            <div class="text_svg">
-                <h1 class="loaded">WELCOME</h1>
-                <object data="./img/logo.svg" class="logo loaded"></object>
-                <object data="./img/text_landscape.svg" class="text"></object>
-            </div>
+					<div class="text">
+						<svg
+							id="Text Landscape"
+                            class="loaded"
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 460 84"
+						>
+							<defs>
+								<linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+									<stop offset="0%" id="textOffset0" />
+									<stop offset="100%" id="textOffset100" />
+								</linearGradient>
+							</defs>
 
-        </div>
-    </section>
-    <!-- Banner End -->
+							<title>Dev Hub</title>
 
-    <!-- Navigation Start -->
-    <section id="dev_navbar">
-        <div class="dev_navbar">
-            <a href="./src/csspack.html" class="nav_btn">
-                <i class="bx bxl-css3"></i>
-                <span>CSS</span>
-            </a>
-            <a href="./src/jspack.html" class="nav_btn">
-                <i class="bx bxl-javascript"></i>
-                <span>JAVASCRIPT</span>
-            </a>
-            <a href="./src/iconpack.html" class="nav_btn">
-                <i class="bx bxs-vector"></i>
-                <span>ICONS</span>
-            </a>
-            <a href="./src/imgpack.html" class="nav_btn">
-                <i class="bx bxs-image"></i>
-                <span>IMAGES</span>
-            </a>
-            <a href="javascript:void(0)" class="nav_btn">
-                <i class="bx bxl-android"></i>
-                <span>ANDROID</span>
-            </a>
-            <a href="javascript:void(0)" class="nav_btn">
-                <i class="bx bxs-extension"></i>
-                <span>API</span>
-            </a>
-        </div>
-    </section>
-    <!-- Navigation End -->
+							<g id="Dev">
+								<path
+									id="D"
+									d="M360,650.5v-81h20.86A40.14,40.14,0,0,1,421,609.64v.72a40.14,40.14,0,0,1-40.14,40.14H366v-75"
+									transform="translate(-359 -568)"
+								/>
+								<polyline
+									id="E"
+									points="105.4 2 74.4 55 115.4 55 115.4 62 74.4 62 74.4 82 115.4 82"
+								/>
+								<polyline
+									id="V"
+									points="139.8 64.5 139.8 1.5 131.8 1.5 131.8 82.5 139.8 82.5 183.8 1.5"
+								/>
+							</g>
+							<g id="Hub">
+								<polyline
+									id="H"
+									points="263.2 1 263.2 83 270.2 83 270.2 54 306.2 54 306.2 83 313.2 83 313.2 1"
+								/>
+								<path
+									id="U"
+									d="M687.6,569v56a26,26,0,0,0,26,26h0a26,26,0,0,0,26-26V569h8v82"
+									transform="translate(-359 -568)"
+								/>
+								<path
+									id="B"
+									d="M770,576v55h16a31,31,0,0,0,31-31h0a31,31,0,0,0-31-31H763v82h37a18,18,0,0,0,18-18h0a9.52,9.52,0,0,0-2.79-6.74L814,625"
+									transform="translate(-359 -568)"
+								/>
+							</g>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Banner End -->
 
-    <!-- About Start -->
-    <section id="dev_about">
-        <div class="dev_about row">
-            <div class="col-md-7 des">
-                <h2>What iS <span>Dev Hub</span> ?</h2>
-                <p>
-                    <span>Dev Hub</span> is a coolest hub for all developers to get any kind of
-                    libraries & packages for <span>CSS, JS, ICON, IMAGES, ANDROID, ML, API</span>.
-                    And this is very easy and fast way to get them all in <span>one place</span>.
-                    We will include more libraries for each section & update soon. Also we are
-                    working on some cool <span>code snippets</span> that are used daily on
-                    live projects.
-                </p>
-            </div>
-            <div class="col-md-5 fig">
-                <object data="./img/developer.svg"></object>
-            </div>
-        </div>
-    </section>
-    <!-- About End -->
+		<!-- Navigation Start -->
+		<section id="dev_navbar">
+			<div class="dev_navbar">
+				<a href="./src/csspack.html" class="nav_btn">
+					<i class="bx bxl-css3"></i>
+					<span>CSS</span>
+				</a>
+				<a href="./src/jspack.html" class="nav_btn">
+					<i class="bx bxl-javascript"></i>
+					<span>JAVASCRIPT</span>
+				</a>
+				<a href="./src/iconpack.html" class="nav_btn">
+					<i class="bx bxs-vector"></i>
+					<span>ICONS</span>
+				</a>
+				<a href="./src/imgpack.html" class="nav_btn">
+					<i class="bx bxs-image"></i>
+					<span>IMAGES</span>
+				</a>
+				<a href="javascript:void(0)" class="nav_btn">
+					<i class="bx bxl-android"></i>
+					<span>ANDROID</span>
+				</a>
+				<a href="javascript:void(0)" class="nav_btn">
+					<i class="bx bxs-extension"></i>
+					<span>API</span>
+				</a>
+			</div>
+		</section>
+		<!-- Navigation End -->
 
-    <!-- Library Start -->
-    <section id="dev_library">
+		<!-- About Start -->
+		<section id="dev_about">
+			<div class="dev_about row">
+				<div class="col-md-7 des">
+					<h2>What iS <span>Dev Hub</span> ?</h2>
+					<p>
+						<span>Dev Hub</span> is a coolest hub for all developers to get any kind of
+						libraries & packages for
+						<span>CSS, JS, ICON, IMAGES, ANDROID, ML, API</span>. And this is very easy
+						and fast way to get them all in <span>one place</span>. We will include more
+						libraries for each section & update soon. Also we are working on some cool
+						<span>code snippets</span> that are used daily on live projects.
+					</p>
+				</div>
+				<div class="col-md-5 fig">
+					<object data="./img/developer.svg"></object>
+				</div>
+			</div>
+		</section>
+		<!-- About End -->
 
-        <div class="lib_banner">
-            <div class="figure">
-                <object data="./img/lang/css.svg"></object>
-            </div>
-            <div class="content">
-                <h2>CSS</h2>
-                <p>Here, all known libraries of CSS used by many developers for their projects.</p>
-                <a href="./src/csspack.html" class="btn">Check Out</a>
-            </div>
-        </div>
+		<!-- Library Start -->
+		<section id="dev_library">
+			<div class="lib_banner">
+				<div class="figure">
+					<object data="./img/lang/css.svg"></object>
+				</div>
+				<div class="content">
+					<h2>CSS</h2>
+					<p>
+						Here, all known libraries of CSS used by many developers for their projects.
+					</p>
+					<a href="./src/csspack.html" class="btn">Check Out</a>
+				</div>
+			</div>
 
-        <div class="lib_banner">
-            <div class="figure">
-                <object data="./img/lang/js.svg"></object>
-            </div>
-            <div class="content">
-                <h2>Javascript</h2>
-                <p>Get all known libraries & packages of JS used by many developers in one place.</p>
-                <a href="./src/jspack.html" class="btn">Check Out</a>
-            </div>
-        </div>
+			<div class="lib_banner">
+				<div class="figure">
+					<object data="./img/lang/js.svg"></object>
+				</div>
+				<div class="content">
+					<h2>Javascript</h2>
+					<p>
+						Get all known libraries & packages of JS used by many developers in one
+						place.
+					</p>
+					<a href="./src/jspack.html" class="btn">Check Out</a>
+				</div>
+			</div>
 
-        <div class="lib_banner">
-            <div class="figure">
-                <object data="./img/lang/icon.svg"></object>
-            </div>
-            <div class="content">
-                <h2>Icons</h2>
-                <p>Look into a awesome & famous collections of Icons to use in any kind of projects.</p>
-                <a href="./src/iconpack.html" class="btn">Check Out</a>
-            </div>
-        </div>
+			<div class="lib_banner">
+				<div class="figure">
+					<object data="./img/lang/icon.svg"></object>
+				</div>
+				<div class="content">
+					<h2>Icons</h2>
+					<p>
+						Look into a awesome & famous collections of Icons to use in any kind of
+						projects.
+					</p>
+					<a href="./src/iconpack.html" class="btn">Check Out</a>
+				</div>
+			</div>
 
-        <div class="lib_banner">
-            <div class="figure">
-                <object data="./img/lang/android.svg"></object>
-            </div>
-            <div class="content">
-                <h2>Android</h2>
-                <p>Yes, we have libraries for Android & ML too for developers to work easily.</p>
-                <a href="javascript:void(0)" class="btn">Check Out</a>
-            </div>
-        </div>
+			<div class="lib_banner">
+				<div class="figure">
+					<object data="./img/lang/android.svg"></object>
+				</div>
+				<div class="content">
+					<h2>Android</h2>
+					<p>
+						Yes, we have libraries for Android & ML too for developers to work easily.
+					</p>
+					<a href="javascript:void(0)" class="btn">Check Out</a>
+				</div>
+			</div>
 
-        <div class="lib_banner">
-            <div class="figure">
-                <object data="./img/lang/img.svg"></object>
-            </div>
-            <div class="content">
-                <h2>Images</h2>
-                <p>Fastest way to get beautiful collections of Images for projects in one place.</p>
-                <a href="./src/imgpack.html" class="btn">Check Out</a>
-            </div>
-        </div>
+			<div class="lib_banner">
+				<div class="figure">
+					<object data="./img/lang/img.svg"></object>
+				</div>
+				<div class="content">
+					<h2>Images</h2>
+					<p>
+						Fastest way to get beautiful collections of Images for projects in one
+						place.
+					</p>
+					<a href="./src/imgpack.html" class="btn">Check Out</a>
+				</div>
+			</div>
 
-        <div class="lib_banner">
-            <div class="figure">
-                <object data="./img/lang/api.svg"></object>
-            </div>
-            <div class="content">
-                <h2>API</h2>
-                <p>Super effective way to get data from good collections of api for projects easily.</p>
-                <a href="javascript:void(0)" class="btn">Check Out</a>
-            </div>
-        </div>
+			<div class="lib_banner">
+				<div class="figure">
+					<object data="./img/lang/api.svg"></object>
+				</div>
+				<div class="content">
+					<h2>API</h2>
+					<p>
+						Super effective way to get data from good collections of api for projects
+						easily.
+					</p>
+					<a href="javascript:void(0)" class="btn">Check Out</a>
+				</div>
+			</div>
+		</section>
+		<!-- Library End -->
 
-    </section>
-    <!-- Library End -->
+		<!-- Footer Start -->
+		<footer>
+			<h2>
+				Developed by <a href="https://imniladri.in/">Niladri Mondal</a> <br />
+				Want to contribute? <a href="https://github.com/imniladri/DevHub/">Click Here</a>
+			</h2>
+			<div class="themes">
+				<p>Pick a color:</p>
+				<div>
+					<button class="shift theme1"></button>
+					<button class="shift theme2"></button>
+					<button class="shift theme3"></button>
+					<button class="shift theme4"></button>
+				</div>
+			</div>
+			<p>
+				<span>Next Js</span> version coming soon! <br />
+				Under development with more cool features.
+			</p>
+		</footer>
+		<!-- Footer End -->
 
-    <!-- Footer Start -->
-    <footer>
-        <h2>
-            Developed by <a href="https://imniladri.in/">Niladri Mondal</a> <br />
-            Want to contribute? <a href="https://github.com/imniladri/DevHub/">Click Here</a>
-        </h2>
-        <div class="themes">
-            <p>Pick a color: </p>
-            <div>
-                <button class="shift theme1"></button>
-                <button class="shift theme2"></button>
-                <button class="shift theme3"></button>
-                <button class="shift theme4"></button>
-            </div>
-        </div>
-        <p>
-            <span>Next Js</span> version coming soon! <br /> Under development with more cool features.
-        </p>
-    </footer>
-    <!-- Footer End -->
+		<script>
+			window.addEventListener("load", () => {
+				var svg = document.querySelector("svg");
 
-</body>
-
+				setTimeout(() => {
+					svg.setAttribute("class", "loaded");
+				}, 1000);
+			});
+		</script>
+	</body>
 </html>
