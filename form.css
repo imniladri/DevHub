@@ -27,7 +27,7 @@ body{
   font-size: 40px;
   font-weight: 800;
   position: relative;
-  top: 75px;
+  top: 150px;
   
 }
 .container .title::before{
@@ -44,7 +44,7 @@ body{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 104px 0 20px 0;
+  margin: 170px 0 20px 0;
 }
 form .user-details .input-box{
   margin-bottom: 15px;
@@ -71,11 +71,15 @@ form .input-box span.details{
 .user-details .input-box input:valid{
   border-color: #9b59b6;
 }
+form .category-details .category-title{
+  font-size: 21px;
+  font-weight: 800;
+ }
 
  form .category{
    display: flex;
-   width: 80%;
-   margin: 14px 0 ;
+   width: 10%;
+   margin: 18px 0 ;
    justify-content: space-between;
  }
  form .category label{
@@ -84,10 +88,11 @@ form .input-box span.details{
    cursor: pointer;
  }
  form .category label .dot{
-  height: 18px;
+  height: 17px;
   width: 18px;
   border-radius: 50%;
   margin-right: 10px;
+  margin-left: 8px;
   background: #d9d9d9;
   border: 5px solid transparent;
   transition: all 0.3s ease;
@@ -103,7 +108,7 @@ form .input-box span.details{
  }
  form .button{
    height: 45px;
-   margin: 0 0
+   margin: 20px 0
  }
  form .button input{
    height: 100%;
@@ -112,7 +117,7 @@ form .input-box span.details{
    border: none;
    color: #fff;
    font-size: 18px;
-   font-weight: 500;
+   font-weight: 800;
    letter-spacing: 1px;
    cursor: pointer;
    transition: all 0.3s ease;
