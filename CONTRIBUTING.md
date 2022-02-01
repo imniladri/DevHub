@@ -11,11 +11,6 @@ We love your input! We want to make contributing to this project as easy and tra
 -   Submitting a fix
 -   Proposing new features
 
-## Add Your Contributing Details Here:
-Added some good useful Android Libraries in the Android page and link the androidpack.html file in other pages.
-Added a theme shifter that changes the main color theme, and the selected theme remains the same after the user closes the site or reload the page on the same browser.
-Added a theme.css file color palettes, that can be used to modify or add themes.
-
 ### Mentor: [Niladri Mondal ](https://github.com/imniladri)
 
 ### Mentee:
