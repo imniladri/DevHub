@@ -36,7 +36,7 @@
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/components/settings.css" />
-    <link rel="stylesheet" href="./css/pages/addnew.css" />
+    <link rel="stylesheet" href="./css/pages/form.css" />
 
     <!-- EXTERNAL JS -->
     <script defer src="./js/libraries/jquery-3.6.0.min.js"></script>
@@ -63,11 +63,97 @@
     <!-- Header End -->
 
     <!-- Add New Form Start -->
-    <section id="add_form">
-        <form action="https://formspree.io/f/mbjqbbly" method="POST">
-
-        </form>
-    </section>
+  <div class="container">
+    <div class="title">Add a New Library</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">First Name</span>
+            <input type="text" placeholder="Enter your First Name" required>
+          </div>
+           <div class="input-box">
+            <span class="details">Last Name</span>
+            <input type="text" placeholder="Enter your Last Name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" required>
+          </div>
+         
+          <div class="input-box">
+            <span class="details">GitHub Username</span>
+            <input type="text" placeholder="Enter your GitHub username" required>
+          </div>
+           <div class="input-box">
+            <span class="details">Library Link</span>
+            <input type="url" name="url" id="url"                       placeholder="Enter the link to the library" required>
+          </div>
+           <div class="input-box">
+            <span class="details">Library Name</span>
+            <input type="text" placeholder="Enter the library name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Library Description</span>
+            <input type="text"   placeholder="Give a brief description." style="height:100px"required>
+          </div>
+          <div class="input-box">
+            <span class="details">Uses of the Library</span>
+            <input type="text"   placeholder="List a few uses of the library." style="height:100px"required>
+          </div>
+        </div>
+        <div class="category-details">
+          <input type="radio" name="category" id="dot-1">
+          <input type="radio" name="category" id="dot-2">
+          <input type="radio" name="category" id="dot-3">
+          <input type="radio" name="category" id="dot-4">
+          <input type="radio" name="category" id="dot-5">
+          <input type="radio" name="category" id="dot-6">
+          <input type="radio" name="category" id="dot-7">
+          <input type="radio" name="category" id="dot-8">
+          <span class="category-title">Select Library Category</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="category">CSS</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="category">JavaScript</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="category">ICON</span>
+            </label>
+            <label for="dot-4">
+            <span class="dot four"></span>
+            <span class="category">IMAGES</span>
+            </label>
+            <label for="dot-5">
+            <span class="dot five"></span>
+            <span class="category">ANDROID</span>
+            </label>
+            <label for="dot-6">
+            <span class="dot six"></span>
+            <span class="category">ML</span>
+            </label>
+            <label for="dot-7">
+            <span class="dot seven"></span>
+            <span class="category">API</span>
+            </label>
+            <label for="dot-8">
+            <span class="dot eight"></span>
+            <span class="category">OTHER</span>
+            </label>
+          </div>
+          </div>
+        
+        <div class="button">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </div>
     <!-- Add New Form End -->
 
 </body>
