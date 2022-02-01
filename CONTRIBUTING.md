@@ -13,7 +13,7 @@ We love your input! We want to make contributing to this project as easy and tra
 
 ## Add Your Contributing Details Here:
 Added a theme shifter that changes the main color theme, and the selected theme remains the same after the user closes the site or reload the page on the same browser.
-Added a theme.css file color palletes, that can be used to modify or add themes.
+Added a theme.css file color palettes, that can be used to modify or add themes.
 
 ### Mentor: [Niladri Mondal ](https://github.com/imniladri)
 
