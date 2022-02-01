@@ -39,6 +39,50 @@ footer p {
 	line-height: 1.6;
 }
 
+footer .themes>p {
+	margin: 2px;
+	text-align: center;
+}
+
+footer .shift {
+	border: none;
+	height: 28px;
+	width: 36px;
+	margin: 0 10px;
+}
+
+footer .shift:hover {
+	box-shadow: 2px 2px 5px rgb(184, 184, 184);
+}
+
+footer .theme1 {
+	background: -webkit-linear-gradient(140deg, var(--primarycolortheme1) 50%, var(--tertiarycolortheme1) 50%);
+	background: -o-linear-gradient(140deg, var(--primarycolortheme1) 50%, var(--tertiarycolortheme1) 50%);
+	background: -moz-linear-gradient(140deg, var(--primarycolortheme1) 50%, var(--tertiarycolortheme1) 50%);
+	background: linear-gradient(140deg, var(--primarycolortheme1) 50%, var(--tertiarycolortheme1) 50%);
+}
+
+footer .theme2 {
+	background: -webkit-linear-gradient(140deg, var(--primarycolortheme2) 50%, var(--tertiarycolortheme2) 50%);
+	background: -o-linear-gradient(140deg, var(--primarycolortheme2) 50%, var(--tertiarycolortheme2) 50%);
+	background: -moz-linear-gradient(140deg, var(--primarycolortheme2) 50%, var(--tertiarycolortheme2) 50%);
+	background: linear-gradient(140deg, var(--primarycolortheme2) 50%, var(--tertiarycolortheme2) 50%);
+}
+
+footer .theme3 {
+	background: -webkit-linear-gradient(140deg, var(--primarycolortheme3) 50%, var(--tertiarycolortheme3) 50%);
+	background: -o-linear-gradient(140deg, var(--primarycolortheme3) 50%, var(--tertiarycolortheme3) 50%);
+	background: -moz-linear-gradient(140deg, var(--primarycolortheme3) 50%, var(--tertiarycolortheme3) 50%);
+	background: linear-gradient(140deg, var(--primarycolortheme3) 50%, var(--tertiarycolortheme3) 50%);
+}
+
+footer .theme4 {
+	background: -webkit-linear-gradient(140deg, var(--primarycolortheme4) 50%, var(--tertiarycolortheme4) 50%);
+	background: -o-linear-gradient(140deg, var(--primarycolortheme4) 50%, var(--tertiarycolortheme4) 50%);
+	background: -moz-linear-gradient(140deg, var(--primarycolortheme4) 50%, var(--tertiarycolortheme4) 50%);
+	background: linear-gradient(140deg, var(--primarycolortheme4) 50%, var(--tertiarycolortheme4) 50%);
+}
+
 footer p span {
 	color: var(--warningcolor);
 }

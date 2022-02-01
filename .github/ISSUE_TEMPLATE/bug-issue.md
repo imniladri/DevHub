@@ -1,7 +1,7 @@
 ---
 name: "Bug Issue \U0001F41B"
 about: Create a issue to help us improve
-title: "Bug: "
+title: "Bug | "
 labels: bug
 assignees: ""
 ---
