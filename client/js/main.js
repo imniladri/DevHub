@@ -62,27 +62,35 @@ $(window).ready(function () {
 
 function setTheme(name) {
     document.querySelector(`.${name}`).onclick = () => {
+        // Set theme for website
         const root = document.documentElement;
         root.style.setProperty('--primarycolor', `var(--primarycolor${name})`);
         root.style.setProperty('--secondarycolor', `var(--secondarycolor${name})`);
         root.style.setProperty('--tertiarycolor', `var(--tertiarycolor${name})`);
+        // Store current theme locally
         localStorage.setItem('theme', `${name}`);
     };
 }
+
+// Function calls to add event listeners for all themes
 
 setTheme('theme1');
 setTheme('theme2');
 setTheme('theme3');
 setTheme('theme4');
 
-// Set Theme for Page Reloads
+// Set Theme for Page Reloads from Local Storage
 
 function fetchTheme(name) {
+    // Get theme for website
     const root = document.documentElement;
     root.style.setProperty('--primarycolor', `var(--primarycolor${name})`);
     root.style.setProperty('--secondarycolor', `var(--secondarycolor${name})`);
     root.style.setProperty('--tertiarycolor', `var(--tertiarycolor${name})`);
+    // Store current theme locally
     localStorage.setItem('theme', `${name}`);
 }
+
+// Function call to set theme for page reload from local storage
 
 localStorage.getItem('theme') === null ? fetchTheme('theme1') : fetchTheme(localStorage.getItem('theme'));
