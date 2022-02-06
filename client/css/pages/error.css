@@ -3,8 +3,8 @@ body {
 	padding: 0;
 	font-family: "montserrat", sans-serif;
 	min-height: 100vh;
-	color: #000;
-	background-image: linear-gradient(125deg, #46c8ad, #c9fdfd);
+	color: #fff;
+	background-image: linear-gradient(125deg, #1b1c25, #21222d);
 	overflow-y: hidden;
 }
 
