@@ -273,6 +273,182 @@ let jsData = [
 		lib_color: "#3c3e89",
 		lib_link: "https://carlosroso.com/notyf/",
 	},
+	{
+		id: 36,
+		lib_name: "D3.js",
+		lib_details:
+			"JavaScript library for manipulating documents based on data using HTML, SVG & CSS",
+		lib_color: "#3c3e89",
+		lib_link: "https://d3js.org/",
+	},
+	{
+		id: 37,
+		lib_name: "Undersrore.js",
+		lib_details:
+			"JavaScript library which provides utility functions for common programming tasks",
+		lib_color: "#3c3e89",
+		lib_link: "https://underscorejs.org/",
+	},
+	{
+		id: 38,
+		lib_name: "Lodash",
+		lib_details:
+			"A modern JavaScript utility library delivering modularity, performance & extras.",
+		lib_color: "#3c3e89",
+		lib_link: "https://lodash.com/",
+	},
+	{
+		id: 39,
+		lib_name: "Algolia Places",
+		lib_details:
+			"Fast, distributed and easy way to use address search autocomplete JavaScript library on your website",
+		lib_color: "#3c3e89",
+		lib_link: "https://community.algolia.com/places/",
+	},
+	{
+		id: 40,
+		lib_name: "Bideo",
+		lib_details:
+			"Javascript library for fullscreen HTML5 Background Video for the Web",
+		lib_color: "#3c3e89",
+		lib_link: "https://bestofjs.org/projects/bideo",
+	},
+	{
+		id: 41,
+		lib_name: "Cleave.js",
+		lib_details:
+			"JavaScript library for formatting input text content when you are typing",
+		lib_color: "#3c3e89",
+		lib_link: "https://nosir.github.io/cleave.js/",
+	},
+	{
+		id: 42,
+		lib_name: "Choreographar-js",
+		lib_details:
+			"A simple javascript library to take care of complex CSS animations",
+		lib_color: "#3c3e89",
+		lib_link: "https://christinecha.github.io/choreographer-js/",
+	},
+	{
+		id: 43,
+		lib_name: "Glimmer.js",
+		lib_details:
+			"One of the fastest DOM rendering engines with light-weight UI components",
+		lib_color: "#3c3e89",
+		lib_link: "https://glimmerjs.com/",
+	},
+	{
+		id: 44,
+		lib_name: "Granim.js",
+		lib_details:
+			"Create fluid and interactive gradient animations with this small javascript library",
+		lib_color: "#3c3e89",
+		lib_link: "https://sarcadass.github.io/granim.js/",
+	},
+	{
+		id: 45,
+		lib_name: "FullPage.js",
+		lib_details:
+			"JQuery and vanilla javascript plugin to create fullscreen scrolling web page",
+		lib_color: "#3c3e89",
+		lib_link: "https://alvarotrigo.com/fullPage/",
+	},
+	{
+		id: 46,
+		lib_name: "Leaflet",
+		lib_details:
+			"An open-source JavaScript library for mobile-friendly interactive maps",
+		lib_color: "#3c3e89",
+		lib_link: "https://leafletjs.com/",
+	},
+	{
+		id: 47,
+		lib_name: "Multiple.js",
+		lib_details:
+			"An experiment in sharing background across multiple elements using CSS",
+		lib_color: "#3c3e89",
+		lib_link: "https://multiple.js.org/",
+	},
+	{
+		id: 48,
+		lib_name: "Moment.js",
+		lib_details:
+			"A JavaScript library for parsing, validating, manipulating, and formatting dates and times",
+		lib_color: "#3c3e89",
+		lib_link: "https://momentjs.com/",
+	},
+	{
+		id: 49,
+		lib_name: "Masonry",
+		lib_details:
+			"JavaScript grid layout library",
+		lib_color: "#3c3e89",
+		lib_link: "https://masonry.desandro.com/",
+	},
+	{
+		id: 50,
+		lib_name: "Omniscient",
+		lib_details:
+			"Provides an abstraction for React components for fast top-down rendering immutable data for js",
+		lib_color: "#3c3e89",
+		lib_link: "https://omniscientjs.github.io/",
+	},
+	{
+		id: 51,
+		lib_name: "Parsley",
+		lib_details:
+			"The ultimate frontend javascript form validation library.",
+		lib_color: "#3c3e89",
+		lib_link: "https://parsleyjs.org/",
+	},
+	{
+		id: 52,
+		lib_name: "Three.js",
+		lib_details:
+			"Cross-browser javascript library for animated 3D graphics",
+		lib_color: "#3c3e89",
+		lib_link: "https://threejs.org/",
+	},
+	{
+		id: 53,
+		lib_name: "Polymer library",
+		lib_details:
+			"Open-source JavaScript library for building web applications using Web Components developed by Google",
+		lib_color: "#3c3e89",
+		lib_link: "https://polymer-library.polymer-project.org/",
+	},
+	{
+		id: 54,
+		lib_name: "Voca",
+		lib_details:
+			"JavaScript library for manipulating Strings.",
+		lib_color: "#3c3e89",
+		lib_link: "https://vocajs.com/",
+	},
+	{
+		id: 55,
+		lib_name: "Hammer.js",
+		lib_details:
+			"Lightweight javaScript library to add multi-touch gestures to your Web Apps",
+		lib_color: "#3c3e89",
+		lib_link: "https://hammerjs.github.io/",
+	},
+	{
+		id: 56,
+		lib_name: "DOJO Toolkit",
+		lib_details:
+			"A JavaScript toolkit that saves you time and scales with your development process",
+		lib_color: "#3c3e89",
+		lib_link: "https://dojotoolkit.org/",
+	},
+	{
+		id: 57,
+		lib_name: "PixiJS",
+		lib_details:
+			"Free open-source 2D engine used to make animated websites and HTML5 games",
+		lib_color: "#3c3e89",
+		lib_link: "https://pixijs.com/",
+	},
 ];
 
 /* ********************************************************** */
