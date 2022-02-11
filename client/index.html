@@ -58,6 +58,15 @@
 	</div>
 	<!-- Preloader End -->
 
+	<!-- page transition start -->
+	<div class="transition">
+		<div class="cover cover1"></div>
+		<div class="cover cover2"></div>
+		<div class="cover cover3"></div>
+	</div>
+	<!-- page transition end -->
+
+
 	<!-- Banner Start -->
 	<section id="dev_banner">
 		<div class="dev_banner">
@@ -155,27 +164,27 @@
 	<!-- Navigation Start -->
 	<section id="dev_navbar">
 		<div class="dev_navbar">
-			<a href="./src/csspack.html" class="nav_btn">
+			<a href="./src/csspack.html" class="nav_btn" id="nav_css">
 				<i class="bx bxl-css3"></i>
 				<span>CSS</span>
 			</a>
-			<a href="./src/jspack.html" class="nav_btn">
+			<a href="./src/jspack.html" class="nav_btn" id="nav_js">
 				<i class="bx bxl-javascript"></i>
 				<span>JAVASCRIPT</span>
 			</a>
-			<a href="./src/iconpack.html" class="nav_btn">
+			<a href="./src/iconpack.html" class="nav_btn" id="nav_icon">
 				<i class="bx bxs-vector"></i>
 				<span>ICONS</span>
 			</a>
-			<a href="./src/imgpack.html" class="nav_btn">
+			<a href="./src/imgpack.html" class="nav_btn" id="nav_img">
 				<i class="bx bxs-image"></i>
 				<span>IMAGES</span>
 			</a>
-			<a href="./src/androidpack.html" class="nav_btn">
+			<a href="./src/androidpack.html" class="nav_btn" id="nav_andr">
 				<i class="bx bxl-android"></i>
 				<span>ANDROID</span>
 			</a>
-			<a href="./src/apipack.html" class="nav_btn">
+			<a href="./src/apipack.html" class="nav_btn" id="nav_api">
 				<i class="bx bxs-extension"></i>
 				<span>API</span>
 			</a>
@@ -215,7 +224,7 @@
 				<p>
 					Here, all known libraries of CSS used by many developers for their projects.
 				</p>
-				<a href="./src/csspack.html" class="btn">Check Out</a>
+				<a href="./src/csspack.html" class="btn" id="lib_css">Check Out</a>
 			</div>
 		</div>
 
@@ -229,7 +238,7 @@
 					Get all known libraries & packages of JS used by many developers in one
 					place.
 				</p>
-				<a href="./src/jspack.html" class="btn">Check Out</a>
+				<a href="./src/jspack.html" class="btn" id="lib_js">Check Out</a>
 			</div>
 		</div>
 
@@ -243,7 +252,7 @@
 					Look into a awesome & famous collections of Icons to use in any kind of
 					projects.
 				</p>
-				<a href="./src/iconpack.html" class="btn">Check Out</a>
+				<a href="./src/iconpack.html" class="btn" id="lib_icon">Check Out</a>
 			</div>
 		</div>
 
@@ -256,7 +265,7 @@
 				<p>
 					Yes, we have libraries for Android & ML too for developers to work easily.
 				</p>
-				<a href="./src/androidpack.html" class="btn">Check Out</a>
+				<a href="./src/androidpack.html" class="btn" id="lib_andr">Check Out</a>
 			</div>
 		</div>
 
@@ -270,7 +279,7 @@
 					Fastest way to get beautiful collections of Images for projects in one
 					place.
 				</p>
-				<a href="./src/imgpack.html" class="btn">Check Out</a>
+				<a href="./src/imgpack.html" class="btn" id="lib_img">Check Out</a>
 			</div>
 		</div>
 
@@ -284,7 +293,7 @@
 					Super effective way to get data from good collections of api for projects
 					easily.
 				</p>
-				<a href="./src/apipack.html" class="btn">Check Out</a>
+				<a href="./src/apipack.html" class="btn" id="lib_api">Check Out</a>
 			</div>
 		</div>
 	</section>
@@ -320,6 +329,120 @@
 				svg.setAttribute("class", "loaded");
 			}, 1000);
 		});
+
+		//page transition css
+		const nav_css = document.querySelector("#nav_css");
+			const lib_css = document.querySelector("#lib_css");
+			const transition_css = document.querySelector(".transition");
+			nav_css.addEventListener("click", (e)=>{
+				e.preventDefault();
+				transition_css.classList.add("slide");
+				setTimeout(()=>{
+					window.location = nav_css.href;
+				}, 900);
+			});
+			lib_css.addEventListener("click", (e)=>{
+				e.preventDefault();
+				transition_css.classList.add("slide");
+				setTimeout(()=>{
+					window.location = lib_css.href;
+				}, 900);
+			});
+
+		//page transition js
+			const nav_js = document.querySelector("#nav_js");
+			const lib_js = document.querySelector("#lib_js");
+			const transition_js = document.querySelector(".transition");
+			nav_js.addEventListener("click", (e)=>{
+				e.preventDefault();
+				transition_js.classList.add("slide");
+				setTimeout(()=>{
+					window.location = nav_js.href;
+				}, 900);
+			});
+			lib_js.addEventListener("click", (e)=>{
+				e.preventDefault();
+				transition_js.classList.add("slide");
+				setTimeout(()=>{
+					window.location = lib_js.href;
+				}, 900);
+			});
+
+		//page transition icons
+			const nav_icon = document.querySelector("#nav_icon");
+			const lib_icon = document.querySelector("#lib_icon");
+			const transition_icon = document.querySelector(".transition");
+			nav_icon.addEventListener("click", (e)=>{
+				e.preventDefault();
+				transition_icon.classList.add("slide");
+				setTimeout(()=>{
+					window.location = nav_icon.href;
+				}, 900);
+			});
+			lib_icon.addEventListener("click", (e)=>{
+				e.preventDefault();
+				transition_icon.classList.add("slide");
+				setTimeout(()=>{
+					window.location = lib_icon.href;
+				}, 900);
+			});
+
+		//page transition images
+			const nav_img = document.querySelector("#nav_img");
+			const lib_img = document.querySelector("#lib_img");
+			const transition_img = document.querySelector(".transition");
+			nav_img.addEventListener("click", (e)=>{
+				e.preventDefault();
+				transition_img.classList.add("slide");
+				setTimeout(()=>{
+					window.location = nav_img.href;
+				}, 900);
+			});
+			lib_img.addEventListener("click", (e)=>{
+				e.preventDefault();
+				transition_img.classList.add("slide");
+				setTimeout(()=>{
+					window.location = lib_img.href;
+				}, 900);
+			});
+
+		//page transition android
+			const nav_andr = document.querySelector("#nav_andr");
+			const lib_andr = document.querySelector("#lib_andr");
+			const transition_andr = document.querySelector(".transition");
+			nav_andr.addEventListener("click", (e)=>{
+				e.preventDefault();
+				transition_andr.classList.add("slide");
+				setTimeout(()=>{
+					window.location = nav_andr.href;
+				}, 900);
+			});
+			lib_andr.addEventListener("click", (e)=>{
+				e.preventDefault();
+				transition_andr.classList.add("slide");
+				setTimeout(()=>{
+					window.location = lib_andr.href;
+				}, 900);
+			});
+
+		//page transition api
+			const nav_api = document.querySelector("#nav_api");
+			const lib_api = document.querySelector("#lib_api");
+			const transition_api = document.querySelector(".transition");
+			nav_api.addEventListener("click", (e)=>{
+				e.preventDefault();
+				transition_api.classList.add("slide");
+				setTimeout(()=>{
+					window.location = nav_api.href;
+				}, 900);
+			});
+			lib_api.addEventListener("click", (e)=>{
+				e.preventDefault();
+				transition_api.classList.add("slide");
+				setTimeout(()=>{
+					window.location = lib_api.href;
+				}, 900);
+			});
 	</script>
 </body>
 

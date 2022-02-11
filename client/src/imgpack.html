@@ -51,6 +51,15 @@
 
 <body>
 
+    <!-- page transition start -->
+	<div class="transition">
+		<div class="cover cover1"></div>
+		<div class="cover cover2"></div>
+		<div class="cover cover3"></div>
+	</div>
+	<!-- page transition end -->
+
+
     <!-- Header Start -->
     <header>
         <nav>
@@ -199,12 +208,12 @@
             </div>
 
             <div class="nav_items">
-                <a href="../src/csspack.html" class="nav_links">Css</a>
-                <a href="../src/jspack.html" class="nav_links">Javascript</a>
-                <a href="../src/iconpack.html" class="nav_links">Icons</a>
-                <a href="../src/imgpack.html" class="nav_links active">Images</a>
-                <a href="../src/androidpack.html" class="nav_links">Android</a>
-                <a href="../src/apipack.html" class="nav_links">Api</a>
+                <a href="../src/csspack.html" class="nav_links" id="nav_css">Css</a>
+                <a href="../src/jspack.html" class="nav_links" id="nav_js">Javascript</a>
+                <a href="../src/iconpack.html" class="nav_links" id="nav_icon">Icons</a>
+                <a href="../src/imgpack.html" class="nav_links active" id="nav_img">Images</a>
+                <a href="../src/androidpack.html" class="nav_links" id="nav_andr">Android</a>
+                <a href="../src/apipack.html" class="nav_links" id="nav_api">Api</a>
             </div>
         </nav>
     </header>
@@ -247,6 +256,75 @@
         </p>
     </footer>
     <!-- Footer End -->
+
+    <script>
+        //page transition css
+			const nav_css = document.querySelector("#nav_css");
+			const transition_css = document.querySelector(".transition");
+			nav_css.addEventListener("click", (e)=>{
+				e.preventDefault();
+				transition_css.classList.add("slide");
+				setTimeout(()=>{
+					window.location = nav_css.href;
+				}, 900);
+			});
+
+        //page transition js
+			const nav_js = document.querySelector("#nav_js");
+			const transition_js = document.querySelector(".transition");
+			nav_js.addEventListener("click", (e)=>{
+				e.preventDefault();
+				transition_js.classList.add("slide");
+				setTimeout(()=>{
+					window.location = nav_js.href;
+				}, 900);
+			});
+
+        //page transition icons
+			const nav_icon = document.querySelector("#nav_icon");
+			const transition_icon = document.querySelector(".transition");
+			nav_icon.addEventListener("click", (e)=>{
+				e.preventDefault();
+				transition_icon.classList.add("slide");
+				setTimeout(()=>{
+					window.location = nav_icon.href;
+				}, 900);
+			});
+
+        //page transition images
+			const nav_img = document.querySelector("#nav_img");
+			const transition_img = document.querySelector(".transition");
+			nav_img.addEventListener("click", (e)=>{
+				e.preventDefault();
+				transition_img.classList.add("slide");
+				setTimeout(()=>{
+					window.location = nav_img.href;
+				}, 900);
+			});
+
+        //page transition android
+			const nav_andr = document.querySelector("#nav_andr");
+			const transition_andr = document.querySelector(".transition");
+			nav_andr.addEventListener("click", (e)=>{
+				e.preventDefault();
+				transition_andr.classList.add("slide");
+				setTimeout(()=>{
+					window.location = nav_andr.href;
+				}, 900);
+			});
+
+        //page transition api
+			const nav_api = document.querySelector("#nav_api");
+			const transition_api = document.querySelector(".transition");
+			nav_api.addEventListener("click", (e)=>{
+				e.preventDefault();
+				transition_api.classList.add("slide");
+				setTimeout(()=>{
+					window.location = nav_api.href;
+				}, 900);
+			});
+    </script>
+
 
 </body>
 
