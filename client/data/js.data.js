@@ -1,5 +1,5 @@
 /* ********************************************************** */
-// All Images Libraries Data Object
+// All JavaScript Libraries Data Object
 /* ********************************************************** */
 
 let jsData = [

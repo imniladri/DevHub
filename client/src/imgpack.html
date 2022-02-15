@@ -214,6 +214,7 @@
                 <a href="../src/imgpack.html" class="nav_links active" id="nav_img">Images</a>
                 <a href="../src/androidpack.html" class="nav_links" id="nav_andr">Android</a>
                 <a href="../src/apipack.html" class="nav_links" id="nav_api">Api</a>
+                <a href="../src/mlpack.html" class="nav_links" id="nav_ml">ML</a>
             </div>
         </nav>
     </header>
@@ -323,6 +324,17 @@
 					window.location = nav_api.href;
 				}, 900);
 			});
+
+        //page transition ml
+			const nav_ml = document.querySelector("#nav_ml");
+			const transition_ml = document.querySelector(".transition");
+			nav_ml.addEventListener("click", (e)=>{
+				e.preventDefault();
+				transition_ml.classList.add("slide");
+				setTimeout(()=>{
+					window.location = nav_ml.href;
+				}, 900);
+			});              
     </script>
 
 
