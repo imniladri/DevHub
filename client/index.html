@@ -193,6 +193,10 @@
 				<i class="bx bxs-extension"></i>
 				<span>API</span>
 			</a>
+			<a href="./src/mlpack.html" class="nav_btn" id="nav_ml">
+				<i class='bx bx-brain'></i>
+				<span>ML</span>
+			</a>
 		</div>
 	</section>
 	<!-- Navigation End -->
@@ -301,6 +305,19 @@
 				<a href="./src/apipack.html" class="btn" id="lib_api">Check Out</a>
 			</div>
 		</div>
+
+		<div class="lib_banner">
+			<div class="figure">
+				<object data="./img/lang/ml.png"></object>
+			</div>
+			<div class="content">
+				<h2>ML</h2>
+				<p>
+					Get all known ML libraries for projects in one place.
+				</p>
+				<a href="./src/mlpack.html" class="btn" id="lib_ml">Check Out</a>
+			</div>
+		</div>		
 	</section>
 	<!-- Library End -->
 
@@ -448,6 +465,25 @@
 					window.location = lib_api.href;
 				}, 900);
 			});
+
+        //page transition ml
+			const nav_ml = document.querySelector("#nav_ml");
+			const lib_ml = document.querySelector("#lib_ml");
+			const transition_ml = document.querySelector(".transition");
+			nav_ml.addEventListener("click", (e)=>{
+				e.preventDefault();
+				transition_ml.classList.add("slide");
+				setTimeout(()=>{
+					window.location = nav_ml.href;
+				}, 900);
+			});
+			lib_ml.addEventListener("click", (e)=>{
+				e.preventDefault();
+				transition_ml.classList.add("slide");
+				setTimeout(()=>{
+					window.location = lib_ml.href;
+				}, 900);
+			}); 			
 	</script>
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
     <!-- Site Title & Favicon-->
-    <title>Android | Dev Hub</title>
+    <title>ML | Dev Hub</title>
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico?v=1" />
 
     <!-- Meta Viewport Set -->
@@ -45,7 +45,7 @@
 
     <!-- MAIN JS -->
     <script defer src="../js/main.js"></script>
-    <script defer src="../data/android.data.js"></script>
+    <script defer src="../data/ml.data.js"></script>
 
 </head>
 
@@ -212,9 +212,9 @@
                 <a href="../src/jspack.html" class="nav_links" id="nav_js">Javascript</a>
                 <a href="../src/iconpack.html" class="nav_links" id="nav_icon">Icons</a>
                 <a href="../src/imgpack.html" class="nav_links" id="nav_img">Images</a>
-                <a href="../src/androidpack.html" class="nav_links active" id="nav_andr">Android</a>
+                <a href="../src/androidpack.html" class="nav_links" id="nav_andr">Android</a>
                 <a href="../src/apipack.html" class="nav_links" id="nav_api">Api</a>
-                <a href="../src/mlpack.html" class="nav_links" id="nav_ml">ML</a>
+                <a href="../src/mlpack.html" class="nav_links active" id="nav_ml">ML</a>
             </div>
         </nav>
     </header>
@@ -226,12 +226,12 @@
         <!-- Search -->
         <form class="searchbar">
             <input type="search" id="search" name="search" class="form-control"
-                placeholder="Search for a android lib name!" required autocomplete="off" />
+                placeholder="Search for a ml lib name!" required autocomplete="off" />
         </form>
 
         <!-- Libraries -->
         <div class="libraries">
-            <!-- All Android Libraries Mapped: "android.data.js" -->
+            <!-- All ML Libraries Mapped: "ml.data.js" -->
         </div>
 
     </section>
@@ -334,7 +334,7 @@
 				setTimeout(()=>{
 					window.location = nav_ml.href;
 				}, 900);
-			});             
+			}); 
     </script>
 
 
