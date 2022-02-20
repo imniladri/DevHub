@@ -179,4 +179,42 @@ div.swal-overlay .swal-modal .swal-button {
 	box-shadow: none;
 }
 
+/* Floating back to top button */
+#scroll {
+	position: fixed;
+	right: 25px;
+	bottom: 25px;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+	background: linear-gradient(145deg, var(--primarycolor) 0%, var(--secondarycolor) 80%);
+	background-size: 300%;
+	text-indent: -9999px;
+	display: none;
+	-webkit-border-radius: 60px;
+	-moz-border-radius: 60px;
+	border-radius: 60px;
+	z-index: 20;
+	transition: all 0.2s ease-in-out;
+  }
+
+#scroll span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -8px;
+	margin-top: -12px;
+	height: 0;
+	width: 0;
+	border: 8px solid transparent;
+	border-bottom-color: var(--primarywhite);
+}
+  
+#scroll:hover {
+	background-size: 100%;
+	opacity: 1;
+	filter: "alpha(opacity=100)";
+	-ms-filter: "alpha(opacity=100)";
+}
+
 /* **************************** Styles End **************************** */
