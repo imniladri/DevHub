@@ -179,13 +179,6 @@ let apiData = [
 		lib_link: "https://developers.facebook.com/",
 	},
 	{
-		id: 26,
-		lib_name: "Stormpath",
-		lib_details: "Stormpath is a secure user management API with built-in support for login features",
-		lib_color: "#6610f2",
-		lib_link: "https://stormpath.com/",
-	},
-	{
 		id: 27,
 		lib_name: "Amazon S3 API",
 		lib_details: "An HTTP/S REST API where all operations are via HTTP PUT, POST, GET, DELETE, and HEAD requests",
