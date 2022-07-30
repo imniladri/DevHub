@@ -1,22 +1,25 @@
 {
-    "files.eol": "\n",
-    "editor.tabSize": 4,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.bracketPairColorization.enabled": false,
-    "editor.autoClosingBrackets": "always",
-    "editor.detectIndentation": true,
-    "editor.autoIndent": "full",
-    "files.autoSave": "afterDelay",
-    "search.exclude": {
-        "node_modules/": true
-    },
-    "files.exclude": {
-        "node_modules/": true,
-        "build/": true,
-        "dist/": true,
-    },
-    "prettier.tabWidth": 4,
-    "prettier.semi": true,
-    "prettier.singleQuote": false,
-    "prettier.jsxSingleQuote": false,
+	"files.eol": "\n",
+	"editor.tabSize": 4,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.bracketPairColorization.enabled": false,
+	"editor.autoClosingBrackets": "always",
+	"editor.detectIndentation": true,
+	"editor.autoIndent": "full",
+	"files.autoSave": "afterDelay",
+	"search.exclude": {
+		"node_modules/": true
+	},
+	"files.exclude": {
+		"node_modules/": true,
+		"build/": true,
+		"dist/": true
+	},
+	"prettier.tabWidth": 4,
+	"prettier.semi": true,
+	"prettier.singleQuote": false,
+	"prettier.jsxSingleQuote": false,
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
 }

@@ -23,13 +23,13 @@
     <meta property="og:image" content="https://devohub.vercel.app/img/logo.png" />
 
     <!-- Icons -->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" />
 
     <!-- Tab Color -->
     <!-- Mobile -->
-    <meta name="theme-color" content="#1b1d25" />
+    <meta name="theme-color" content="#2E025A" />
     <!-- Windows -->
-    <meta name="msapplication-navbutton-color" content="#1b1d25" />
+    <meta name="msapplication-navbutton-color" content="#2E025A" />
 
     <!-- EXTERNAL CSS -->
     <link rel="stylesheet" href="./css/libraries/bootstrap.min.css" />
@@ -42,9 +42,11 @@
     <script defer src="./js/libraries/jquery-3.6.0.min.js"></script>
     <script defer src="./js/libraries/bootstrap.min.js"></script>
     <script defer src="./js/libraries/sweetalert.min.js"></script>
+    <script defer src="./js/libraries/particles.min.js"></script>
 
     <!-- MAIN JS -->
     <script defer src="./js/main.js"></script>
+    <script defer src="./js/dots.js"></script>
 
 </head>
 
@@ -53,6 +55,7 @@
     <!-- Preloader Start -->
     <div id="preloader">
         <div class="loader">
+            <!-- <h2>Loading</h2> -->
             <div class="dot-1"></div>
             <div class="dot-2"></div>
             <div class="dot-3"></div>
@@ -60,161 +63,206 @@
     </div>
     <!-- Preloader End -->
 
-    <!-- Banner Start -->
-    <section id="dev_banner">
-        <div class="dev_banner">
+    <main>
 
-            <div class="img_svg">
-                <img src="./img/wave_svg_1.svg" alt="" />
-                <img src="./img/wave_svg_2.svg" alt="" />
-                <div class="banner"></div>
+        <!-- Banner Start -->
+        <section id="dev_banner">
+            <div id="dots-js"></div>
+            <div class="dev_banner">
+                <h2 class="loaded">Welcome</h2>
+                <img src="./img/bot_welcome.svg" class="loaded" />
+                <h1 class="loaded">DEV HUB</h1>
+
+                <!--
+                    <object data="./img/text_landscape.svg" class="text"></object>
+                    <object data="./img/text_portrait.svg" class="text"></object>
+                -->
+            </div>
+        </section>
+        <!-- Banner End -->
+
+        <!-- Navigation Start -->
+        <section id="dev_navbar">
+            <div class="dev_navbar">
+                <a href="./src/csspack.html" class="nav_btn">
+                    <i class="bx bxl-css3"></i>
+                    <span>CSS</span>
+                </a>
+                <a href="./src/jspack.html" class="nav_btn">
+                    <i class="bx bxl-javascript"></i>
+                    <span>JAVASCRIPT</span>
+                </a>
+                <a href="./src/iconpack.html" class="nav_btn">
+                    <i class="bx bxs-vector"></i>
+                    <span>ICONS</span>
+                </a>
+                <a href="./src/imgpack.html" class="nav_btn">
+                    <i class="bx bxs-image"></i>
+                    <span>IMAGES</span>
+                </a>
+                <a href="./src/androidpack.html" class="nav_btn">
+                    <i class="bx bxl-android"></i>
+                    <span>ANDROID</span>
+                </a>
+                <a href="./src/apipack.html" class="nav_btn">
+                    <i class="bx bxs-extension"></i>
+                    <span>API</span>
+                </a>
+                <a href="./src/mlpack.html" class="nav_btn">
+                    <i class="bx bxs-brain"></i>
+                    <span>ML</span>
+                </a>
+                <a href="./src/fontspack.html" class="nav_btn">
+                    <i class="bx bxs-pen"></i>
+                    <span>Fonts</span>
+                </a>
+            </div>
+        </section>
+        <!-- Navigation End -->
+
+        <!-- About Start -->
+        <section id="dev_about">
+            <div class="dev_about row">
+                <div class="col-md-7 des">
+                    <h2>What iS <span>Dev Hub</span> ?</h2>
+                    <p>
+                        <span>Dev Hub</span> is a coolest hub for all developers to get any kind of
+                        libraries & packages for <span>CSS, JS, ICON, IMAGES, ANDROID, ML, API</span>.
+                        And this is very easy and fast way to get them all in <span>one place</span>.
+                        We will include more libraries for each section & update soon. Also we are
+                        working on some cool <span>code snippets</span> that are used daily on
+                        live projects.
+                    </p>
+                </div>
+                <div class="col-md-5 fig">
+                    <object data="./img/bot_space.svg"></object>
+                </div>
+            </div>
+        </section>
+        <!-- About End -->
+
+        <!-- Library Start -->
+        <section id="dev_library">
+
+            <div class="lib_banner">
+                <div class="figure">
+                    <object data="./img/lang/icon1.svg"></object>
+                </div>
+                <div class="content">
+                    <h2>CSS</h2>
+                    <p>Here, all known libraries of CSS used by many developers for their projects.</p>
+                    <a href="./src/csspack.html" class="btn">Check Out</a>
+                </div>
             </div>
 
-            <div class="text_svg">
-                <h1 class="loaded">WELCOME</h1>
-                <object data="./img/logo.svg" class="logo loaded"></object>
-                <object data="./img/text_landscape.svg" class="text"></object>
+            <div class="lib_banner">
+                <div class="figure">
+                    <object data="./img/lang/icon2.svg"></object>
+                </div>
+                <div class="content">
+                    <h2>Javascript</h2>
+                    <p>Get all known libraries & packages of JS used by many developers in one place.</p>
+                    <a href="./src/jspack.html" class="btn">Check Out</a>
+                </div>
             </div>
 
-        </div>
-    </section>
-    <!-- Banner End -->
+            <div class="lib_banner">
+                <div class="figure">
+                    <object data="./img/lang/icon3.svg"></object>
+                </div>
+                <div class="content">
+                    <h2>Icons</h2>
+                    <p>Look into a awesome & famous collections of Icons to use in any kind of projects.</p>
+                    <a href="./src/iconpack.html" class="btn">Check Out</a>
+                </div>
+            </div>
 
-    <!-- Navigation Start -->
-    <section id="dev_navbar">
-        <div class="dev_navbar">
-            <a href="./src/csspack.html" class="nav_btn">
-                <i class="bx bxl-css3"></i>
-                <span>CSS</span>
-            </a>
-            <a href="./src/jspack.html" class="nav_btn">
-                <i class="bx bxl-javascript"></i>
-                <span>JAVASCRIPT</span>
-            </a>
-            <a href="./src/iconpack.html" class="nav_btn">
-                <i class="bx bxs-vector"></i>
-                <span>ICONS</span>
-            </a>
-            <a href="./src/imgpack.html" class="nav_btn">
-                <i class="bx bxs-image"></i>
-                <span>IMAGES</span>
-            </a>
-            <a href="javascript:void(0)" class="nav_btn">
-                <i class="bx bxl-android"></i>
-                <span>ANDROID</span>
-            </a>
-            <a href="javascript:void(0)" class="nav_btn">
-                <i class="bx bxs-extension"></i>
-                <span>API</span>
-            </a>
-        </div>
-    </section>
-    <!-- Navigation End -->
+            <div class="lib_banner">
+                <div class="figure">
+                    <object data="./img/lang/icon4.svg"></object>
+                </div>
+                <div class="content">
+                    <h2>Android</h2>
+                    <p>Yes, we have libraries for Android & ML too for developers to work easily.</p>
+                    <a href="./src/androidpack.html" class="btn">Check Out</a>
+                </div>
+            </div>
 
-    <!-- About Start -->
-    <section id="dev_about">
-        <div class="dev_about row">
-            <div class="col-md-7 des">
-                <h2>What iS <span>Dev Hub</span> ?</h2>
+            <div class="lib_banner">
+                <div class="figure">
+                    <object data="./img/lang/icon5.svg"></object>
+                </div>
+                <div class="content">
+                    <h2>Images</h2>
+                    <p>Fastest way to get beautiful collections of Images for projects in one place.</p>
+                    <a href="./src/imgpack.html" class="btn">Check Out</a>
+                </div>
+            </div>
+
+            <div class="lib_banner">
+                <div class="figure">
+                    <object data="./img/lang/icon6.svg"></object>
+                </div>
+                <div class="content">
+                    <h2>API</h2>
+                    <p>Super effective way to get data from good collections of api for projects easily.</p>
+                    <a href="./src/apipack.html" class="btn">Check Out</a>
+                </div>
+            </div>
+
+            <div class="lib_banner">
+                <div class="figure">
+                    <object data="./img/lang/icon7.svg"></object>
+                </div>
+                <div class="content">
+                    <h2>ML</h2>
+                    <p>Get all known ML libraries for projects in one place for your projects.</p>
+                    <a href="./src/mlpack.html" class="btn">Check Out</a>
+                </div>
+            </div>
+
+            <div class="lib_banner">
+                <div class="figure">
+                    <object data="./img/lang/icon8.svg"></object>
+                </div>
+                <div class="content">
+                    <h2>Fonts</h2>
+                    <p>Coming soon all great font families together for your attractive projects.</p>
+                    <a href="./src/fontspack.html" class="btn">Check Out</a>
+                </div>
+            </div>
+
+        </section>
+        <!-- Library End -->
+
+        <!-- Want to Add New Start -->
+        <section id="dev_addnew">
+            <div class="dev_addnew">
+                <h2>Want to Add New ?</h2>
                 <p>
-                    <span>Dev Hub</span> is a coolest hub for all developers to get any kind of
-                    libraries & packages for <span>CSS, JS, ICON, IMAGES, ANDROID, ML, API</span>.
-                    And this is very easy and fast way to get them all in <span>one place</span>.
-                    We will include more libraries for each section & update soon. Also we are
-                    working on some cool <span>code snippets</span> that are used daily on
-                    live projects.
+                    If you want to add some new library or package for any section, please contact us.
+                    <br />
+                    We will add it in our website soon.
                 </p>
+                <!-- <a href="./issue.html">Add Now!</a> -->
+                <a href="javascript:void(0)">Add Now!</a>
             </div>
-            <div class="col-md-5 fig">
-                <object data="./img/developer.svg"></object>
-            </div>
-        </div>
-    </section>
-    <!-- About End -->
+        </section>
+        <!-- Want to Add New End -->
 
-    <!-- Library Start -->
-    <section id="dev_library">
+        <!-- Footer Start -->
+        <footer>
+            <h2>
+                Developed by <a href="https://imniladri.in/">Niladri Mondal</a> <br />
+                Want to contribute? <a href="https://github.com/imniladri/DevHub/">Click Here</a>
+            </h2>
+            <p>
+                Next version coming soon! <br /> Under development with more cool features.
+            </p>
+        </footer>
+        <!-- Footer End -->
 
-        <div class="lib_banner">
-            <div class="figure">
-                <object data="./img/lang/css.svg"></object>
-            </div>
-            <div class="content">
-                <h2>CSS</h2>
-                <p>Here, all known libraries of CSS used by many developers for their projects.</p>
-                <a href="./src/csspack.html" class="btn">Check Out</a>
-            </div>
-        </div>
-
-        <div class="lib_banner">
-            <div class="figure">
-                <object data="./img/lang/js.svg"></object>
-            </div>
-            <div class="content">
-                <h2>Javascript</h2>
-                <p>Get all known libraries & packages of JS used by many developers in one place.</p>
-                <a href="./src/jspack.html" class="btn">Check Out</a>
-            </div>
-        </div>
-
-        <div class="lib_banner">
-            <div class="figure">
-                <object data="./img/lang/icon.svg"></object>
-            </div>
-            <div class="content">
-                <h2>Icons</h2>
-                <p>Look into a awesome & famous collections of Icons to use in any kind of projects.</p>
-                <a href="./src/iconpack.html" class="btn">Check Out</a>
-            </div>
-        </div>
-
-        <div class="lib_banner">
-            <div class="figure">
-                <object data="./img/lang/android.svg"></object>
-            </div>
-            <div class="content">
-                <h2>Android</h2>
-                <p>Yes, we have libraries for Android & ML too for developers to work easily.</p>
-                <a href="javascript:void(0)" class="btn">Check Out</a>
-            </div>
-        </div>
-
-        <div class="lib_banner">
-            <div class="figure">
-                <object data="./img/lang/img.svg"></object>
-            </div>
-            <div class="content">
-                <h2>Images</h2>
-                <p>Fastest way to get beautiful collections of Images for projects in one place.</p>
-                <a href="./src/imgpack.html" class="btn">Check Out</a>
-            </div>
-        </div>
-
-        <div class="lib_banner">
-            <div class="figure">
-                <object data="./img/lang/api.svg"></object>
-            </div>
-            <div class="content">
-                <h2>API</h2>
-                <p>Super effective way to get data from good collections of api for projects easily.</p>
-                <a href="javascript:void(0)" class="btn">Check Out</a>
-            </div>
-        </div>
-
-    </section>
-    <!-- Library End -->
-
-    <!-- Footer Start -->
-    <footer>
-        <h2>
-            Developed by <a href="https://imniladri.in/">Niladri Mondal</a> <br />
-            Want to contribute? <a href="https://github.com/imniladri/DevHub/">Click Here</a>
-        </h2>
-        <p>
-            <span>Next Js</span> version coming soon! <br /> Under development with more cool features.
-        </p>
-    </footer>
-    <!-- Footer End -->
+    </main>
 
 </body>
 

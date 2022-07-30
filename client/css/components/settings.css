@@ -13,6 +13,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+@import url("../../fonts/Liber/Liber-Font.css");
 
 /* **************************** Components Stylesheets **************************** */
 
@@ -50,27 +51,25 @@ html {
 
 body {
 	font-family: var(--mainfont);
-	background: var(--primaryBg);
+	background: var(--primarywhite) url(../../img/bg_glass.png) no-repeat fixed center / cover;
+}
+
+main {
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.6s ease-in-out;
 }
 
 /* **************************** Root Variables **************************** */
 
 :root {
 	/* Default Colors */
-	--primaryblack: #222831;
+	--primaryblack: #1b1d25;
 	--primarywhite: #ffffff;
 	--lightwhite: #f7fafc;
-	--primarygrey: #9ba4b4;
-
-	/* Bg Colors */
-	--primaryBg: #1b1d25;
-	--secondaryBg: #21222d;
-
-	/* Theme Colors */
-	--primarycolor: #0689ff;
-	--secondarycolor: #3347ff;
-	--tertiarycolor: #fff133;
-	--warningcolor: #ff005c;
+	--primarygrey: #bfc9d1;
+	--maincolor: #420378;
+	--primarycolor: #cbfa3a;
 
 	/* Default Fonts */
 	--mainfont: "Montserrat", sans-serif;
@@ -80,20 +79,24 @@ body {
 /* **************************** Scroll Bar **************************** */
 
 ::-webkit-scrollbar {
-	width: 7px;
+	width: 6px;
 	height: 6px;
 	background: transparent;
 }
+
+::-webkit-scrollbar-track {
+	background: var(--maincolor);
+}
+
 ::-webkit-scrollbar-thumb {
 	background: var(--primarywhite);
-	border-radius: 2px;
 }
 
 /* **************************** Selection **************************** */
 
 ::selection {
 	color: var(--primarywhite);
-	background: var(--primarycolor);
+	background: rgba(255, 255, 255, 0.25);
 }
 
 /* **************************** User Select None **************************** */
@@ -117,65 +120,112 @@ a.btn:focus {
 /* **************************** Font Faces **************************** */
 
 @font-face {
-	font-family: "Blanka";
-	src: url("../../fonts/Blanka.otf");
+	font-family: "Spoiled";
+	src: url(../../fonts/Spoiled.otf) format("opentype");
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
 }
 
 @font-face {
-	font-family: "Do4Brain";
-	src: url("../../fonts/Do4Brain.ttf");
+	font-family: "PerryWaters";
+	src: url(../../fonts/PerryWaters.woff) format("woff"),
+		url(../../fonts/PerryWaters.otf) format("opentype");
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
 }
 
 @font-face {
-	font-family: "StudioFeixen";
-	src: url("../../fonts/StudioFeixen.ttf");
+	font-family: "Astromax";
+	src: url(../../fonts/Astromax.woff) format("woff"),
+		url(../../fonts/Astromax.ttf) format("truetype");
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: "Spectron";
+	src: url(../../fonts/Spectron.woff2) format("woff2"),
+		url(../../fonts/Spectron.otf) format("opentype");
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
 }
 
 /* **************************** Swal Alert **************************** */
 
 div.swal-overlay {
-	background: rgba(24, 26, 32, 0.8);
+	background: rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0px 0px 50px 20px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
 }
 
 div.swal-overlay .swal-modal {
 	margin: auto;
-	padding: 2rem;
-	background: var(--secondaryBg);
-	border-radius: 10px;
+	padding: 1rem;
+	border-radius: 20px;
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 div.swal-overlay .swal-modal .swal-title {
-	margin: 1rem auto;
-	font-size: 3rem;
-	font-weight: 600;
-	font-family: "Do4Brain", sans-serif;
+	margin: auto;
+	font-size: 4.5rem;
+	font-weight: 400;
+	font-family: "Spoiled", sans-serif;
 	color: var(--primarywhite);
-	-webkit-text-stroke: 1px var(--primarywhite);
-	letter-spacing: 1.2px;
+	-webkit-text-stroke: 0.8px var(--primarywhite);
+	letter-spacing: 3px;
 	text-align: center;
 }
 
 div.swal-overlay .swal-modal .swal-text {
-	margin: -0.5rem;
-	font-size: 2.2rem;
+	margin: -1rem auto;
+	font-size: 2.1rem;
 	font-weight: 500;
-	font-family: var(--mainfont);
-	color: var(--primarygrey);
-	letter-spacing: 0.4px;
+	font-family: "Liber", sans-serif;
+	color: var(--lightwhite);
+	letter-spacing: 0.8px;
 	text-align: center;
 }
 
 div.swal-overlay .swal-modal .swal-footer {
-	margin: 1rem;
+	margin: 1rem auto 0;
 	text-align: center;
 }
 
 div.swal-overlay .swal-modal .swal-button {
+	position: relative;
 	padding: 0.8rem 2rem;
 	font: 600 1.8rem var(--textfont);
 	color: var(--primarywhite);
-	background: var(--warningcolor);
-	box-shadow: none;
+	border-radius: 50px;
+	background: rgba(255, 255, 255, 0.15);
+	box-shadow: inset 60px 0px 10px 2px rgba(255, 255, 255, 0.2);
+	transition: all 0.15s ease-in-out;
+}
+
+div.swal-overlay .swal-modal .swal-button:hover {
+	background: rgba(255, 255, 255, 0.2);
+	box-shadow: inset 60px 0px 10px 2px rgba(255, 255, 255, 0.3);
+}
+
+div.swal-overlay .swal-modal .swal-button::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	border-right: 1.5px solid var(--primarywhite);
+	border-bottom: 1.5px solid var(--primarywhite);
+	opacity: 0.4;
+	border-radius: 50px;
 }
 
 /* **************************** Styles End **************************** */

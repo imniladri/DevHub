@@ -1,0 +1,57 @@
+/* Liber Font Faces (300, 400, 500, 600, 700, 800, 900) */
+
+@font-face {
+	font-family: "Liber";
+	src: url(../../fonts/Liber/Liber-300-SemiLight.ttf) format("truetype");
+	font-weight: 300;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: "Liber";
+	src: url(../../fonts/Liber/Liber-400-Regular.ttf) format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: "Liber";
+	src: url(../../fonts/Liber/Liber-500-Medium.ttf) format("truetype");
+	font-weight: 500;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: "Liber";
+	src: url(../../fonts/Liber/Liber-600-SemiBold.ttf) format("truetype");
+	font-weight: 600;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: "Liber";
+	src: url(../../fonts/Liber/Liber-700-Bold.ttf) format("truetype");
+	font-weight: 700;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: "Liber";
+	src: url(../../fonts/Liber/Liber-800-ExtraBold.ttf) format("truetype");
+	font-weight: 800;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: "Liber";
+	src: url(../../fonts/Liber/Liber-900-Black.ttf) format("truetype");
+	font-weight: 900;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+}

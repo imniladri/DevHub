@@ -2,97 +2,90 @@
 
 /* **************************** Index Banner **************************** */
 
-section#dev_banner div.dev_banner {
+section#dev_banner {
 	position: relative;
-	width: 100%;
-	height: 100vh;
-	background: var(--primaryBg);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-
-/* **************************** Index Banner Images **************************** */
-
-div.dev_banner .img_svg {
-	position: absolute;
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-div.dev_banner .img_svg .banner {
-	position: absolute;
 	width: 100%;
 	height: 100%;
-	opacity: 0.2;
-	background: url(../../img/banner.svg) no-repeat center / cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-div.dev_banner .img_svg img:nth-child(1) {
-	position: absolute;
+div#dots-js {
+	position: fixed;
 	top: 0;
 	left: 0;
-	width: 50%;
-	height: auto;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
 }
 
-div.dev_banner .img_svg img:nth-child(2) {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	width: 80%;
-	height: auto;
-}
-
-/* **************************** Index Banner Texts **************************** */
-
-section#dev_banner div.dev_banner .text_svg {
-	margin: auto;
+div.dev_banner {
+	margin: 4rem auto;
+	padding: 6rem 1rem;
 	position: relative;
+	width: calc(100% - 20rem);
+	height: 100%;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
 	flex-direction: column;
+
+	/* Glass Effect */
+	border-radius: 16px;
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1), inset 0px 0px 40px 20px rgba(255, 255, 255, 0.2);
+	border: 2px solid rgba(255, 255, 255, 0.7);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
 }
 
-section#dev_banner div.dev_banner .text_svg h1 {
-	margin: 1rem auto;
-	font-size: 4rem;
-	font-weight: 600;
-	font-family: "Do4Brain", sans-serif;
-	color: var(--primarywhite);
+div.dev_banner h2 {
+	margin: 2rem auto;
+	font-size: 8rem;
+	font-weight: 400;
+	font-family: "Spoiled", sans-serif;
+	color: var(--lightwhite);
+	text-align: center;
+	-webkit-text-stroke: 1px var(--lightwhite);
 	opacity: 0;
 	user-select: none;
 	letter-spacing: 10rem;
 	transition: all 0.6s cubic-bezier(0.35, 1.95, 0.51, 0.66);
 }
 
-section#dev_banner div.dev_banner .text_svg h1.active {
-	opacity: 1;
-	letter-spacing: 0.5rem;
+div.dev_banner h1 {
+	margin: 2rem auto;
+	font-size: 20rem;
+	font-weight: 400;
+	font-family: "Spectron", sans-serif;
+	color: var(--primarywhite);
+	-webkit-text-stroke: 2px var(--primarywhite);
+	user-select: none;
+	letter-spacing: 8px;
+	text-align: center;
+	text-transform: uppercase;
+	opacity: 0;
+	transform: scale(0);
+	transition: all 0.6s cubic-bezier(0.35, 1.95, 0.51, 0.66);
 }
 
-section#dev_banner div.dev_banner object.logo {
-	margin: 3rem auto;
-	width: 23rem;
+div.dev_banner img {
+	margin: 2rem auto 4rem;
+	padding: 0 2rem;
+	width: 25rem;
 	height: auto;
 	opacity: 0;
 	transform: scale(0);
 	transition: all 0.6s cubic-bezier(0.35, 1.95, 0.51, 0.66);
 }
 
-section#dev_banner div.dev_banner object.text {
-	margin: 2rem auto;
-	padding: 0 2rem;
-	width: 100rem;
-	height: auto;
+div.dev_banner h2.active {
+	opacity: 1;
+	letter-spacing: 0.5rem;
 }
-
-section#dev_banner div.dev_banner object.logo.active {
+div.dev_banner h1.active,
+div.dev_banner img.active {
 	opacity: 1;
 	transform: scale(1);
 }
@@ -100,30 +93,32 @@ section#dev_banner div.dev_banner object.logo.active {
 /* **************************** Responsive Media **************************** */
 
 @media (max-width: 992px) {
-	section#dev_banner div.dev_banner .text_svg h1 {
-		letter-spacing: 2rem;
+	div.dev_banner {
+		width: calc(100% - 10rem);
 	}
-	section#dev_banner div.dev_banner object.logo {
+	div.dev_banner h2 {
+		font-size: 6rem;
+	}
+	div.dev_banner h1 {
+		font-size: 15rem;
+	}
+	div.dev_banner img {
 		width: 20rem;
 	}
-	section#dev_banner div.dev_banner object.text {
-		padding: 0 4rem;
-		width: 70rem;
+}
+
+@media (max-width: 767px) {
+	div.dev_banner h1 {
+		font-size: 12rem;
+	}
+	div.dev_banner img {
+		width: 18rem;
 	}
 }
 
-@media (max-width: 768px) {
-	section#dev_banner div.dev_banner object.logo {
-		width: 14rem;
-	}
-	section#dev_banner div.dev_banner object.text {
-		width: 100%;
-	}
-}
-
-@media (max-width: 572px) {
-	section#dev_banner div.dev_banner object.text {
-		width: 80%;
+@media (max-width: 476px) {
+	div.dev_banner {
+		width: calc(100% - 5rem);
 	}
 }
 
@@ -131,26 +126,35 @@ section#dev_banner div.dev_banner object.logo.active {
 
 section#dev_navbar div.dev_navbar {
 	margin: 10rem auto;
-	padding: 1rem;
-	width: 90%;
+	padding: 1rem 6rem;
+	width: calc(100% - 20rem);
 	position: relative;
 	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	background: var(--secondaryBg);
-	border-radius: 8px;
+	justify-content: center;
+	align-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+
+	/* Glass Effect */
+	border-radius: 12px;
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1), inset 0px 0px 40px 20px rgba(255, 255, 255, 0.2);
+	border: 2px solid rgba(255, 255, 255, 0.7);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
 }
 
 div.dev_navbar a.nav_btn {
 	position: relative;
 	margin: 1rem;
-	padding: 2rem;
+	padding: 1rem 2rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	text-decoration: none;
-	border-radius: 6px;
-	background: var(--primaryBg);
+	border-radius: 10px;
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2), inset 0px 0px 20px 2px rgba(255, 255, 255, 0.2);
 	transition: all 0.15s ease-in-out;
 }
 
@@ -161,10 +165,10 @@ div.dev_navbar a.nav_btn::before {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	border: 4px solid var(--primarycolor);
+	border: 3px solid var(--primarywhite);
 	opacity: 0;
-	border-radius: 6px;
-	transition: all 0.2s ease-in-out;
+	border-radius: 10px;
+	transition: all 0.15s ease-in-out;
 }
 
 div.dev_navbar a.nav_btn:hover:before {
@@ -172,19 +176,19 @@ div.dev_navbar a.nav_btn:hover:before {
 }
 
 div.dev_navbar a.nav_btn i {
-	margin: 0.5rem auto;
-	font-size: 5.4rem;
-	color: var(--primarygrey);
+	margin: 1rem auto 0;
+	font-size: 4.5rem;
+	color: var(--primarywhite);
 	transition: all 0.15s ease-in-out;
 }
 
 div.dev_navbar a.nav_btn span {
-	margin: 0.5rem auto;
+	margin: 1rem auto;
 	font-size: 2.2rem;
-	font-weight: 600;
-	font-family: var(--codefont);
-	color: var(--primarygrey);
-	letter-spacing: 0.4px;
+	font-weight: 800;
+	font-family: "Liber", sans-serif;
+	color: var(--primarywhite);
+	letter-spacing: 1.2px;
 	transition: all 0.15s ease-in-out;
 }
 
@@ -195,31 +199,29 @@ div.dev_navbar a.nav_btn:hover span {
 
 /* **************************** Responsive Media **************************** */
 
-@media (max-width: 1080px) {
-	section#dev_navbar div.dev_navbar {
-		grid-template-columns: repeat(3, 1fr);
-	}
-}
-
 @media (max-width: 992px) {
-	div.dev_navbar a.nav_btn i {
-		font-size: 5rem;
-	}
-	div.dev_navbar a.nav_btn span {
-		font-size: 2.2rem;
+	section#dev_navbar div.dev_navbar {
+		width: calc(100% - 10rem);
 	}
 }
 
 @media (max-width: 572px) {
 	section#dev_navbar div.dev_navbar {
-		grid-template-columns: repeat(2, 1fr);
-	}
-	div.dev_navbar a.nav_btn {
-		margin: 0.5rem;
 		padding: 1rem;
 	}
-	div.dev_navbar a.nav_btn span {
+
+	div.dev_navbar a.nav_btn {
+		margin: 0.5rem;
+	}
+
+	div.dev_navbar a.nav_btn i {
 		display: none;
+	}
+}
+
+@media (max-width: 476px) {
+	section#dev_navbar div.dev_navbar {
+		width: calc(100% - 5rem);
 	}
 }
 
@@ -229,81 +231,84 @@ section#dev_about div.dev_about {
 	position: relative;
 	margin: 10rem auto;
 	padding: 2rem;
-	width: 90%;
+	width: calc(100% - 20rem);
 	height: 90vh;
-	background: var(--secondaryBg);
-	border-radius: 8px;
+
+	/* Glass Effect */
+	border-radius: 16px;
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1), inset 0px 0px 40px 20px rgba(255, 255, 255, 0.2);
+	border: 2px solid rgba(255, 255, 255, 0.7);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
 }
 
-section#dev_about div.dev_about::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	border: 6px solid var(--tertiarycolor);
-	opacity: 0;
-	border-radius: 8px;
-	transition: all 0.2s ease-in-out;
-}
-
-section#dev_about div.dev_about:hover:before {
-	opacity: 1;
-}
-
-section#dev_about div.dev_about .des,
-section#dev_about div.dev_about .fig {
+div.dev_about .des,
+div.dev_about .fig {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 }
 
-section#dev_about div.dev_about h2 {
+div.dev_about h2 {
 	margin: 3rem auto;
-	font-size: 5rem;
-	font-weight: 500;
-	font-family: "Blanka", sans-serif;
-	color: var(--tertiarycolor);
+	padding: 2rem 2rem 1rem;
+	font-size: 4rem;
+	font-weight: 700;
+	font-family: "Liber", sans-serif;
+	color: var(--primarywhite);
 	letter-spacing: 3px;
 	text-align: center;
 	user-select: none;
+	border-radius: 8px;
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2), inset 0px 0px 20px 4px rgba(255, 255, 255, 0.2);
 }
 
-section#dev_about div.dev_about h2 span {
+div.dev_about h2 span {
+	font-size: 6rem;
+	font-weight: 600;
+	font-family: "PerryWaters", sans-serif;
 	color: var(--primarywhite);
+	-webkit-text-stroke: 1px var(--primarywhite);
 }
 
-section#dev_about div.dev_about p {
+div.dev_about p {
 	margin: 2rem auto;
-	font-size: 2.5rem;
+	padding: 3rem;
+	font-size: 2.2rem;
 	font-weight: 400;
 	font-family: var(--textfont);
-	color: var(--primarygrey);
+	color: var(--lightwhite);
 	text-align: justify;
-	text-align-last: center;
 	line-height: 1.5;
-	letter-spacing: 0.8px;
+	letter-spacing: 1px;
 	word-spacing: 1px;
+	border-radius: 8px;
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2), inset 0px 0px 20px 4px rgba(255, 255, 255, 0.2);
 }
 
-section#dev_about div.dev_about p span {
+div.dev_about p::first-line {
+	line-height: 1;
+}
+
+div.dev_about p span {
 	font-weight: 600;
-	color: var(--primarycolor);
 }
 
-section#dev_about div.dev_about p span:first-child {
-	padding: 2px 8px 4px;
+div.dev_about p span:first-child {
+	margin-right: 0.8rem;
+	font-size: 4.2rem;
 	font-weight: 500;
+	font-family: "Spoiled", sans-serif;
 	color: var(--primarywhite);
-	background: var(--primarycolor);
-	border-radius: 4px;
 }
 
-section#dev_about div.dev_about object {
+div.dev_about object {
 	margin: auto;
-	width: 100%;
+	width: 90%;
 	height: auto;
 }
 
@@ -311,26 +316,39 @@ section#dev_about div.dev_about object {
 
 @media (max-width: 992px) {
 	section#dev_about div.dev_about {
+		width: calc(100% - 10rem);
 		height: auto;
 	}
-	section#dev_about div.dev_about h2 {
-		font-size: 4rem;
+	div.dev_about h2 {
+		font-size: 3.5rem;
 	}
-	section#dev_about div.dev_about p {
-		font-size: 2rem;
+	div.dev_about h2 span {
+		font-size: 5rem;
+	}
+}
+
+@media (max-width: 768px) {
+	div.dev_about object {
+		width: 70%;
 	}
 }
 
 @media (max-width: 572px) {
-	section#dev_about div.dev_about::before {
-		border: 4px solid var(--tertiarycolor);
+	section#dev_about div.dev_about {
+		padding: 2rem 1rem;
 	}
-	section#dev_about div.dev_about h2 {
+	div.dev_about h2 {
 		margin: 1rem auto;
 		font-size: 3.5rem;
 	}
-	section#dev_about div.dev_about h2 span {
+	div.dev_about h2 span {
 		display: block;
+	}
+}
+
+@media (max-width: 476px) {
+	section#dev_about div.dev_about {
+		width: calc(100% - 5rem);
 	}
 }
 
@@ -341,10 +359,10 @@ section#dev_about div.dev_about object {
 section#dev_library {
 	margin: 5rem auto;
 	position: relative;
-	width: 90%;
+	width: calc(100% - 20rem);
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	gap: 4rem 2rem;
+	gap: 6rem 3rem;
 }
 
 section#dev_library div.lib_banner {
@@ -357,27 +375,16 @@ section#dev_library div.lib_banner {
 	align-items: center;
 	width: 100%;
 	height: 50vh;
-	background: var(--secondaryBg);
-	border-radius: 8px;
 	overflow: hidden;
 	z-index: 1;
-}
 
-section#dev_library div.lib_banner::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	border: 5px solid var(--tertiarycolor);
-	opacity: 0;
-	border-radius: 8px;
-	transition: all 0.4s ease-in-out;
-}
-
-section#dev_library div.lib_banner:hover:before {
-	opacity: 1;
+	/* Glass Effect */
+	border-radius: 12px;
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1), inset 0px 0px 40px 20px rgba(255, 255, 255, 0.2);
+	border: 2px solid rgba(255, 255, 255, 0.7);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
 }
 
 /* ============ Library Tiles Figure ============ */
@@ -388,24 +395,19 @@ div.lib_banner .figure {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	opacity: 0.8;
+	opacity: 1;
 	z-index: -1;
-	transition: all 0.3s ease-in-out;
 }
 
 div.lib_banner .figure object {
 	width: 30rem;
 	height: auto;
-	transform: translateX(5rem) scale(0.95);
+	transform: translateX(6rem) scale(0.9);
 	transition: all 0.6s cubic-bezier(0.34, 1.64, 0.56, 0.88);
 }
 
-div.lib_banner:hover .figure {
-	opacity: 1;
-}
-
 div.lib_banner:hover .figure object {
-	transform: translateX(3rem) scale(1);
+	transform: translateX(4rem) scale(1);
 }
 
 /* ============ Library Tiles Content ============ */
@@ -421,12 +423,12 @@ div.lib_banner .content {
 
 div.lib_banner .content h2 {
 	margin: 0.5rem 0;
-	font-size: 4rem;
-	font-weight: 600;
-	font-family: "Do4Brain", sans-serif;
+	font-size: 5rem;
+	font-weight: 400;
+	font-family: "Spoiled", sans-serif;
 	color: var(--primarywhite);
-	-webkit-text-stroke: 1px var(--primarywhite);
-	letter-spacing: 1.2px;
+	-webkit-text-stroke: 0.8px var(--primarywhite);
+	letter-spacing: 4px;
 	text-align: left;
 	user-select: none;
 }
@@ -434,31 +436,48 @@ div.lib_banner .content h2 {
 div.lib_banner .content p {
 	margin: 0.5rem 0;
 	font-size: 2rem;
-	font-weight: 500;
-	font-family: var(--mainfont);
-	color: var(--primarygrey);
+	font-weight: 600;
+	font-family: "Liber", sans-serif;
+	color: var(--lightwhite);
 	letter-spacing: 0.4px;
 	text-align: left;
 }
 
 div.lib_banner .content a {
+	position: relative;
 	margin: 1.5rem 0;
-	padding: 0.8rem 2.2rem;
-	font-size: 2rem;
-	font-weight: 500;
-	font-family: var(--textfont);
+	padding: 1.2rem 2.4rem 0.8rem;
+	font-size: 1.8rem;
+	font-weight: 700;
+	font-family: "Liber", sans-serif;
 	color: var(--primarywhite);
-	background: linear-gradient(145deg, var(--primarycolor) 0%, var(--secondarycolor) 80%);
-	background-size: 300%;
-	border: none;
-	border-radius: 6px;
-	letter-spacing: 1px;
+	border-radius: 50px;
+	background: rgba(255, 255, 255, 0.15);
+	background: linear-gradient(
+		135deg,
+		rgba(255, 255, 255, 0.25) 60%,
+		rgba(255, 255, 255, 0.15) 100%
+	);
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2), inset 0px 0px 10px 2px rgba(255, 255, 255, 0.2);
+	letter-spacing: 0.4px;
 	text-align: center;
-	transition: all 0.2s ease-in-out;
 }
 
-div.lib_banner .content a:hover {
-	background-size: 100%;
+div.lib_banner .content a::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 2px solid var(--primarywhite);
+	opacity: 0.4;
+	border-radius: 50px;
+	transition: all 0.1s ease-in-out;
+}
+
+div.lib_banner .content a:hover:before {
+	opacity: 0.8;
 }
 
 /* **************************** Responsive Media **************************** */
@@ -470,6 +489,12 @@ div.lib_banner .content a:hover {
 	}
 }
 
+@media (max-width: 992px) {
+	section#dev_library {
+		width: calc(100% - 10rem);
+	}
+}
+
 @media (max-width: 768px) {
 	section#dev_library div.lib_banner {
 		padding: 2rem;
@@ -477,15 +502,18 @@ div.lib_banner .content a:hover {
 		align-items: flex-start;
 		flex-direction: column;
 	}
+
 	div.lib_banner .figure {
 		position: relative;
 		opacity: 1;
 		z-index: 1;
 	}
+
 	div.lib_banner .figure object {
 		width: 20rem;
 		transform: translateX(0) scale(0.9);
 	}
+
 	div.lib_banner:hover .figure object {
 		transform: translateX(0) scale(1);
 	}
@@ -500,12 +528,120 @@ div.lib_banner .content a:hover {
 	div.lib_banner .figure object {
 		width: 10rem;
 	}
+
 	div.lib_banner .content h2 {
 		font-size: 3.5rem;
 		-webkit-text-stroke: 0.5px var(--primarywhite);
 	}
-	div.lib_banner .content a {
-		padding: 0.6rem 2rem;
+}
+
+@media (max-width: 476px) {
+	section#dev_library {
+		width: calc(100% - 5rem);
+	}
+}
+
+/* **************************** Index Add New **************************** */
+
+section#dev_addnew div.dev_addnew {
+	position: relative;
+	margin: 10rem auto;
+	padding: 6rem 2rem;
+	width: calc(100% - 20rem);
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	/* Glass Effect */
+	border-radius: 16px;
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1), inset 0px 0px 40px 20px rgba(255, 255, 255, 0.2);
+	border: 2px solid rgba(255, 255, 255, 0.7);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+}
+
+div.dev_addnew h2 {
+	margin: 2rem auto;
+	font-size: 5rem;
+	font-weight: 500;
+	font-family: "Astromax", sans-serif;
+	color: var(--primarywhite);
+	letter-spacing: 1px;
+	text-align: center;
+	user-select: none;
+}
+
+div.dev_addnew p {
+	margin: 1rem auto;
+	font-size: 1.8rem;
+	font-weight: 600;
+	font-family: "Liber", sans-serif;
+	color: var(--lightwhite);
+	letter-spacing: 0.8px;
+	text-align: center;
+	line-height: 1.8;
+}
+
+div.dev_addnew a {
+	position: relative;
+	margin: 1.5rem auto;
+	padding: 1.8rem 4.4rem 1.4rem;
+	font-size: 2rem;
+	font-weight: 700;
+	font-family: "Liber", sans-serif;
+	color: var(--primarywhite);
+	border-radius: 50px;
+	background: rgba(255, 255, 255, 0.15);
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2), inset 0px 0px 10px 2px rgba(255, 255, 255, 0.2);
+	letter-spacing: 1px;
+	text-align: center;
+	text-decoration: none;
+}
+
+div.dev_addnew a::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 2.5px solid var(--primarywhite);
+	opacity: 0.4;
+	border-radius: 50px;
+	transition: all 0.1s ease-in-out;
+}
+
+div.dev_addnew a:hover:before {
+	opacity: 0.8;
+}
+
+/* **************************** Responsive Media **************************** */
+
+@media (max-width: 992px) {
+	section#dev_addnew div.dev_addnew {
+		width: calc(100% - 10rem);
+	}
+}
+
+@media (max-width: 768px) {
+	section#dev_addnew div.dev_addnew {
+		padding: 2rem;
+	}
+	div.dev_addnew h2 {
+		font-size: 4rem;
+	}
+	div.dev_addnew a {
+		padding: 1.6rem 3.6rem 1.2rem;
+		font-size: 1.8rem;
+	}
+}
+
+@media (max-width: 476px) {
+	section#dev_addnew div.dev_addnew {
+		width: calc(100% - 5rem);
 	}
 }
 

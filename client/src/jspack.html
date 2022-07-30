@@ -23,13 +23,13 @@
     <meta property="og:image" content="../img/logo.svg" />
 
     <!-- Icons -->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" />
 
     <!-- Tab Color -->
     <!-- Mobile -->
-    <meta name="theme-color" content="#21222d" />
+    <meta name="theme-color" content="#2E025A" />
     <!-- Windows -->
-    <meta name="msapplication-navbutton-color" content="#21222d" />
+    <meta name="msapplication-navbutton-color" content="#2E025A" />
 
     <!-- EXTERNAL CSS -->
     <link rel="stylesheet" href="../css/libraries/bootstrap.min.css" />
@@ -42,72 +42,106 @@
     <script defer src="../js/libraries/jquery-3.6.0.min.js"></script>
     <script defer src="../js/libraries/bootstrap.min.js"></script>
     <script defer src="../js/libraries/sweetalert.min.js"></script>
+    <script defer src="../js/libraries/particles.min.js"></script>
 
     <!-- MAIN JS -->
     <script defer src="../js/main.js"></script>
+    <script defer src="../js/dots.js"></script>
     <script defer src="../data/js.data.js"></script>
 
 </head>
 
 <body>
 
-    <!-- Header Start -->
-    <header>
-        <nav>
-            <a href="../" class="nav_brand">
-                <img src="../img/logo.svg" alt="DevHub">
-                <h4>Dev<span>Hub</span></h4>
-            </a>
-
-            <div class="menu_icon menu_candy">
-                <span class="menu_open box_1"></span>
-                <span class="menu_open box_2"></span>
-                <span class="menu_open box_3"></span>
-                <span class="menu_open box_4"></span>
-                <span class="menu_close close_1"></span>
-                <span class="menu_close close_2"></span>
-            </div>
-
-            <div class="nav_items">
-                <a href="../src/csspack.html" class="nav_links">Css</a>
-                <a href="../src/jspack.html" class="nav_links active">Javascript</a>
-                <a href="../src/iconpack.html" class="nav_links">Icons</a>
-                <a href="../src/imgpack.html" class="nav_links">Images</a>
-                <a href="javascript:void(0)" class="nav_links">Android</a>
-                <a href="javascript:void(0)" class="nav_links">Api</a>
-            </div>
-        </nav>
-    </header>
-    <!-- Header End -->
-
-    <!-- Library Start -->
-    <section id="libraries">
-
-        <!-- Search -->
-        <form class="searchbar">
-            <input type="search" id="search" name="search" class="form-control" placeholder="Search for a js lib name!"
-                required autocomplete="off" />
-        </form>
-
-        <!-- Libraries -->
-        <div class="libraries">
-            <!-- All Javascript Libraries Mapped: "js.data.js" -->
+    <!-- Preloader Start -->
+    <div id="preloader">
+        <div class="loader">
+            <!-- <h2>Loading</h2> -->
+            <div class="dot-1"></div>
+            <div class="dot-2"></div>
+            <div class="dot-3"></div>
         </div>
+    </div>
+    <!-- Preloader End -->
 
-    </section>
-    <!-- Library End -->
+    <main>
 
-    <!-- Footer Start -->
-    <footer>
-        <h2>
-            Developed by <a href="https://imniladri.in/">Niladri Mondal</a> <br />
-            Want to contribute? <a href="https://github.com/imniladri/DevHub/">Click Here</a>
-        </h2>
-        <p>
-            <span>Next Js</span> version coming soon! <br /> Under development with more cool features.
-        </p>
-    </footer>
-    <!-- Footer End -->
+        <!-- Background Backdrop Blur Start -->
+        <div id="backdrop_bg"></div>
+        <!-- Background Backdrop Blur End -->
+
+        <!-- Background Dot Particles Start -->
+        <div id="dots-js"></div>
+        <!-- Background Dot Particles End -->
+
+        <!-- Header Start -->
+        <header>
+            <nav>
+                <a href="../" class="nav_brand">
+                    <img src="../img/logo.svg" alt="DevHub" />
+                    <h4>Dev Hub</h4>
+                </a>
+
+                <div class="menu_icon menu_candy">
+                    <span class="menu_open box_1"></span>
+                    <span class="menu_open box_2"></span>
+                    <span class="menu_open box_3"></span>
+                    <span class="menu_open box_4"></span>
+                    <span class="menu_close close_1"></span>
+                    <span class="menu_close close_2"></span>
+                </div>
+
+                <div class="nav_items">
+                    <a href="../src/csspack.html" class="nav_links">CSS</a>
+                    <a href="../src/jspack.html" class="nav_links active">Javascript</a>
+                    <a href="../src/iconpack.html" class="nav_links">Icons</a>
+                    <a href="../src/imgpack.html" class="nav_links">Images</a>
+                    <a href="../src/androidpack.html" class="nav_links">Android</a>
+                    <a href="../src/apipack.html" class="nav_links">API</a>
+                    <a href="../src/mlpack.html" class="nav_links">ML</a>
+                    <a href="../src/fontspack.html" class="nav_links">Fonts</a>
+                </div>
+            </nav>
+        </header>
+        <!-- Header End -->
+
+        <!-- Library Start -->
+        <section id="libraries">
+
+            <!-- Library Header -->
+            <div class="lib_header">
+                <img src="../img/lang/icon2.svg" alt="JS Lib Img" />
+                <h2>JS Libraries</h2>
+                <p>JS Libraries are a collection of JS files that can be used to create a projects.</p>
+
+                <!-- Search -->
+                <form class="searchbar">
+                    <input type="search" id="search" name="search" class="form-control"
+                        placeholder="Search for a js lib name!" required autocomplete="off" />
+                </form>
+            </div>
+
+            <!-- Libraries -->
+            <div class="libraries">
+                <!-- All Javascript Libraries Mapped: "js.data.js" -->
+            </div>
+
+        </section>
+        <!-- Library End -->
+
+        <!-- Footer Start -->
+        <footer>
+            <h2>
+                Developed by <a href="https://imniladri.in/">Niladri Mondal</a> <br />
+                Want to contribute? <a href="https://github.com/imniladri/DevHub/">Click Here</a>
+            </h2>
+            <p>
+                Next version coming soon! <br /> Under development with more cool features.
+            </p>
+        </footer>
+        <!-- Footer End -->
+
+    </main>
 
 </body>
 

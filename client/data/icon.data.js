@@ -123,7 +123,7 @@ let iconData = [
 	},
 	{
 		id: 16,
-		lib_name: "Freeicons",
+		lib_name: "Iconpacks",
 		lib_details: "Free PNG image, SVG vector icons for commercial and personal use.",
 		lib_color: "#2E4857",
 		lib_link: "https://www.iconpacks.net/",
@@ -149,6 +149,98 @@ let iconData = [
 		lib_color: "#2fc6b2",
 		lib_link: "https://uxwing.com/",
 	},
+	{
+		id: 20,
+		lib_name: "Freepik",
+		lib_details: "One of the most popular platforms for finding free vector icons online",
+		lib_color: "#2fc6b2",
+		lib_link: "https://www.freepik.com/",
+	},
+	{
+		id: 21,
+		lib_name: "Iconninja",
+		lib_details: "Provides icon materials with detailed information, in PNG and SVG",
+		lib_color: "#2fc6b2",
+		lib_link: "https://www.iconninja.com/",
+	},
+	{
+		id: 22,
+		lib_name: "Vector4Free",
+		lib_details: "Attractive icons and vector graphics personal use",
+		lib_color: "#2fc6b2",
+		lib_link: "https://www.vector4free.com/",
+	},
+	{
+		id: 23,
+		lib_name: "The Noun Project",
+		lib_details: "Cool bi-colored icons stock for almost everything",
+		lib_color: "#2fc6b2",
+		lib_link: "https://thenounproject.com/",
+	},
+	{
+		id: 24,
+		lib_name: "Iconmonstr",
+		lib_details: "Comprehensive icon library offers outlined and filled versions of each icon",
+		lib_color: "#2fc6b2",
+		lib_link: "https://iconmonstr.com/",
+	},
+	{
+		id: 25,
+		lib_name: "Orion",
+		lib_details: "Cool SVG vector icons of line, solid, color and flat styles",
+		lib_color: "#2fc6b2",
+		lib_link: "https://orioniconlibrary.com/",
+	},
+	{
+		id: 26,
+		lib_name: "IcoMoon",
+		lib_details: "Icon fonts and Icon packs, available on both website and app",
+		lib_color: "#2fc6b2",
+		lib_link: "https://icomoon.io/",
+	},
+	{
+		id: 27,
+		lib_name: "Pictonic",
+		lib_details: "Offers an array of icon fonts sorted according to theme",
+		lib_color: "#2fc6b2",
+		lib_link: "https://pictonic.co/",
+	},
+	{
+		id: 28,
+		lib_name: "Glyphish",
+		lib_details: "Features icons for iOS, Android and the Apple Watch",
+		lib_color: "#2fc6b2",
+		lib_link: "https://www.glyphish.com/",
+	},
+	{
+		id: 29,
+		lib_name: "PixelLove",
+		lib_details: "Six versatile icon styles for iOS and Android platforms",
+		lib_color: "#2fc6b2",
+		lib_link: "https://www.pixellove.com/",
+	},
+	{
+		id: 30,
+		lib_name: "Smashicons",
+		lib_details: "Very large collection of icons, don't all follow the same style",
+		lib_color: "#2fc6b2",
+		lib_link: "https://smashicons.com/",
+	},
+	{
+		id: 31,
+		lib_name: "Roundicons",
+		lib_details: "Commercial use icon library made for apps, websites, infographics and prints",
+		lib_color: "#2fc6b2",
+		lib_link: "https://roundicons.com/",
+	},
+	{
+		id: 32,
+		lib_name: "React Icons",
+		lib_details:
+			"Icon compilation library to add icons from various libraries into React project as an SVG element",
+		lib_color: "#2fc6b2",
+		lib_link: "https://react-icons.github.io/react-icons/",
+	},
 ];
 
 /* ********************************************************** */
@@ -163,11 +255,7 @@ Object.values(iconData).map((val) => {
         <div class="lib_card">
             <h2>${val.lib_name}</h2>
             <p>${val.lib_details}</p>
-            <a
-                href="${val.lib_link}"
-                class="btn lib_link"
-                target="_blank"
-            >
+            <a href="${val.lib_link}" class="btn lib_link" target="_blank">
                 See Now
             </a>
         </div>

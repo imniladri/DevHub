@@ -1,8 +1,8 @@
-<svg id="Text Landscape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 84">
+<svg id="Text Landscape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1176.39 201">
     <defs>
         <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" style="stop-color: #2fdfff; stop-opacity: 1" />
-            <stop offset="100%" style="stop-color: #026efd; stop-opacity: 1" />
+            <stop offset="0%" style="stop-color: #F5F7FA; stop-opacity: 1" />
+            <stop offset="100%" style="stop-color: #B8C6DB; stop-opacity: 1" />
         </linearGradient>
 
         <style>
@@ -17,57 +17,59 @@
                 visibility: visible;
             }
 
-            svg.loaded path,
-            svg.loaded polyline {
+            svg.loaded path {
                 fill: none;
                 stroke: url(#grad);
                 stroke-linecap: round;
                 stroke-linejoin: round;
-                stroke-width: 4px;
+                stroke-width: 8px;
+                opacity: 0;
             }
 
             @keyframes line {
                 0% {
-                    stroke-dasharray: 50;
+                    stroke-dasharray: 10;
+                    opacity: 0;
                 }
-                50% {
-                    stroke-dasharray: 100;
+                10% {
+                    opacity: 1;
                 }
                 100% {
                     stroke-dashoffset: 0;
+                    opacity: 1;
                 }
             }
 
             svg.loaded path#D {
-                stroke-dasharray: 320;
-                stroke-dashoffset: 320;
-                animation: line 10s cubic-bezier(0.35, 1.95, 0.51, 0.66) forwards 0.2s;
+                stroke-dasharray: 1034;
+                stroke-dashoffset: 1034;
+                animation: line 15s cubic-bezier(0.5, 0, 0.8, 0.48) forwards 0.2s;
             }
-            svg.loaded polyline#E {
-                stroke-dasharray: 350;
-                stroke-dashoffset: 350;
-                animation: line 10s cubic-bezier(0.35, 1.95, 0.51, 0.66) forwards 0.6s;
+            svg.loaded path#E {
+                stroke-dasharray: 1010;
+                stroke-dashoffset: 1010;
+                animation: line 15s cubic-bezier(0.5, 0, 0.8, 0.48) forwards 0.6s;
             }
-            svg.loaded polyline#V {
-                stroke-dasharray: 254;
-                stroke-dashoffset: 254;
-                animation: line 10s cubic-bezier(0.35, 1.95, 0.51, 0.66) forwards 1.2s;
+            svg.loaded path#V {
+                stroke-dasharray: 798;
+                stroke-dashoffset: 798;
+                animation: line 15s cubic-bezier(0.5, 0, 0.8, 0.48) forwards 1.2s;
             }
 
-            svg.loaded polyline#H {
-                stroke-dasharray: 272;
-                stroke-dashoffset: 272;
-                animation: line 10s cubic-bezier(0.35, 1.95, 0.51, 0.66) forwards 1.5s;
+            svg.loaded path#H {
+                stroke-dasharray: 1032;
+                stroke-dashoffset: 1032;
+                animation: line 15s cubic-bezier(0.5, 0, 0.8, 0.48) forwards 1.5s;
             }
             svg.loaded path#U {
-                stroke-dasharray: 285;
-                stroke-dashoffset: 285;
-                animation: line 10s cubic-bezier(0.35, 1.95, 0.51, 0.66) forwards 1.8s;
+                stroke-dasharray: 946;
+                stroke-dashoffset: 946;
+                animation: line 15s cubic-bezier(0.5, 0, 0.8, 0.48) forwards 1.8s;
             }
             svg.loaded path#B {
-                stroke-dasharray: 350;
-                stroke-dashoffset: 350;
-                animation: line 10s cubic-bezier(0.35, 1.95, 0.51, 0.66) forwards 2.0s;
+                stroke-dasharray: 1102;
+                stroke-dashoffset: 1102;
+                animation: line 15s cubic-bezier(0.5, 0, 0.8, 0.48) forwards 2.0s;
             }
         </style>
     </defs>
@@ -84,14 +86,15 @@
 
     <title>Dev Hub</title>
 
-    <g id="Dev">
-        <path id="D" d="M360,650.5v-81h20.86A40.14,40.14,0,0,1,421,609.64v.72a40.14,40.14,0,0,1-40.14,40.14H366v-75" transform="translate(-359 -568)" />
-        <polyline id="E" points="105.4 2 74.4 55 115.4 55 115.4 62 74.4 62 74.4 82 115.4 82" />
-        <polyline id="V" points="139.8 64.5 139.8 1.5 131.8 1.5 131.8 82.5 139.8 82.5 183.8 1.5" />
+    <g id="DEV">
+        <path id="D" d="M549,622V582h77.21A94.79,94.79,0,0,1,721,676.79v2.42A94.79,94.79,0,0,1,626.21,774H549V668a53,53,0,0,1,53-53h16.93A61.06,61.06,0,0,1,680,676.06v3.88A61.06,61.06,0,0,1,618.94,741H591V634" transform="translate(-546 -578)"/>
+        <path id="E" d="M749,629V581H883v33H811.44A61.44,61.44,0,0,0,750,675.44V774H886V742H791V691h79V659H792V636" transform="translate(-546 -578)"/>
+        <path id="V" d="M1025,741l-12,33H974L905,582h45l48.59,130.77A18.51,18.51,0,0,0,1016,725h0a18.51,18.51,0,0,0,17.41-12.23L1082,582h-39l-37,102" transform="translate(-546 -578)"/>
     </g>
-    <g id="Hub">
-        <polyline id="H" points="263.2 1 263.2 83 270.2 83 270.2 54 306.2 54 306.2 83 313.2 83 313.2 1" />
-        <path id="U" d="M687.6,569v56a26,26,0,0,0,26,26h0a26,26,0,0,0,26-26V569h8v82" transform="translate(-359 -568)" />
-        <path id="B" d="M770,576v55h16a31,31,0,0,0,31-31h0a31,31,0,0,0-31-31H763v82h37a18,18,0,0,0,18-18h0a9.52,9.52,0,0,0-2.79-6.74L814,625" transform="translate(-359 -568)" />
+    <g id="HUB">
+        <path id="H" d="M1226,691h-12v83h-42V582h42v56c0,34,27,52,58,52h22v84h42V582h-42v76h-57" transform="translate(-546 -578)"/>
+        <path id="U" d="M1366,697v4.72A74.27,74.27,0,0,0,1440.28,776h8.44A74.27,74.27,0,0,0,1523,701.72V581h-35V697.4a41.59,41.59,0,0,1-41.6,41.6h-.59C1390,739,1368,692,1368,651.19V582h41V699" transform="translate(-546 -578)"/>
+        <path id="B" d="M1610,691h43.86A23.14,23.14,0,0,1,1677,714.14v3.72A23.14,23.14,0,0,1,1653.86,741H1596V690m0-55v23h43.5a21.51,21.51,0,0,0,21.5-21.5h0a21.51,21.51,0,0,0-21.5-21.5H1602c-47,10-48,65-48,65v95h103.92a56.11,56.11,0,0,0,35.1-12.18c59.35-47.48,0-95.82,0-95.82,24.59-44.41-.75-68.28-19.28-79a53.44,53.44,0,0,0-26.66-7H1554v50" transform="translate(-546 -578)"/>
     </g>
+
 </svg>

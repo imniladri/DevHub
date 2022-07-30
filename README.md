@@ -16,7 +16,7 @@
 <!-- PROJECT LOGO -->
 <h1 align = "center">Dev Hub: A Awesome Hub for all Developers</h1>
 <div align="center">
-    <img src="./client/assets/DevHub-Window.png" alt="Frame" width="800" />
+    <img src="./client/assets/GitHub-Banner.png" alt="Frame" width="800" />
 </div>
 <div align="center">
     <img src="https://forthebadge.com/images/badges/built-with-love.svg" />
