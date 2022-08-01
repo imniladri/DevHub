@@ -8,7 +8,6 @@ let iconData = [
 		lib_name: "Font Awesome",
 		lib_details:
 			"The web's most popular icon set & toolkit with vector icons & logos for your website.",
-		lib_color: "#1fa67a",
 		lib_link: "https://fontawesome.com/",
 	},
 	{
@@ -16,7 +15,6 @@ let iconData = [
 		lib_name: "Boxicons",
 		lib_details:
 			"A simple vector icons crafted for designers & developers to use in your project.",
-		lib_color: "#030f12",
 		lib_link: "https://boxicons.com/",
 	},
 	{
@@ -24,7 +22,6 @@ let iconData = [
 		lib_name: "Material Icons",
 		lib_details:
 			"A delightful, beautifully crafted symbols for common actions and items to use.",
-		lib_color: "#212121",
 		lib_link: "https://material.io/icons/",
 	},
 	{
@@ -32,7 +29,6 @@ let iconData = [
 		lib_name: "Flaticon",
 		lib_details:
 			"A largest database for wide variety of vector icons in SVG, PNG, EPS or Icon Font.",
-		lib_color: "#4AD295",
 		lib_link: "https://flaticon.com/",
 	},
 	{
@@ -40,14 +36,12 @@ let iconData = [
 		lib_name: "Tabler Icons",
 		lib_details:
 			"A set of over many free high-quality SVG icons with size & stroke customizable.",
-		lib_color: "#7d3bec",
 		lib_link: "https://tablericons.com/",
 	},
 	{
 		id: 6,
 		lib_name: "Shape",
 		lib_details: "The collection of icons and illustrations with fully customizable options.",
-		lib_color: "#3913B8",
 		lib_link: "https://shape.so/",
 	},
 	{
@@ -55,7 +49,6 @@ let iconData = [
 		lib_name: "Lottie Icons",
 		lib_details:
 			"A set of animated lottie files icons that work like magic on your webflow site.",
-		lib_color: "#f48126",
 		lib_link: "https://lottieflow.com/",
 	},
 	{
@@ -63,7 +56,6 @@ let iconData = [
 		lib_name: "Icons8",
 		lib_details:
 			"A variety icons, illustrations, photos, music, and design tools with icons8 toolkit.",
-		lib_color: "#1fb141",
 		lib_link: "https://icons8.com/",
 	},
 	{
@@ -71,7 +63,6 @@ let iconData = [
 		lib_name: "Nucleo",
 		lib_details:
 			"A cool icon organizer & library of icons, powerful app to customize & collect icons.",
-		lib_color: "#121318",
 		lib_link: "https://nucleoapp.com/",
 	},
 	{
@@ -79,7 +70,6 @@ let iconData = [
 		lib_name: "Streamline Icons",
 		lib_details:
 			"A collection of icon pack which work faster with our plugins for figma & sketch.",
-		lib_color: "#00f6f6",
 		lib_link: "https://streamlineicons.com/",
 	},
 	{
@@ -87,7 +77,6 @@ let iconData = [
 		lib_name: "LineIcons",
 		lib_details:
 			"A handcrafted icons pack for modern UI of web, android, ios, desktop app projects.",
-		lib_color: "#D5119A",
 		lib_link: "https://lineicons.com/",
 	},
 	{
@@ -95,14 +84,12 @@ let iconData = [
 		lib_name: "Feather Icons",
 		lib_details:
 			"A simply beautiful open source icons pack with an emphasis on simplicity & flexibility.",
-		lib_color: "#959da5",
 		lib_link: "https://feathericons.com/",
 	},
 	{
 		id: 13,
 		lib_name: "Ionicons",
 		lib_details: "A premium icons for web, ios, android, desktop apps with SVG & Web Font.",
-		lib_color: "#0cadff",
 		lib_link: "https://ionicons.com/",
 	},
 	{
@@ -110,7 +97,6 @@ let iconData = [
 		lib_name: "CSS Icons",
 		lib_details:
 			"A pure built-in CSS icons library, & format in pure CSS, SVG, Figma & Adobe XD.",
-		lib_color: "#691FEE",
 		lib_link: "https://css.gg/",
 	},
 	{
@@ -118,119 +104,102 @@ let iconData = [
 		lib_name: "Freeicons",
 		lib_details:
 			"The largest database of free icons available in PNG, SVG, EPS, PSD & BASE 64.",
-		lib_color: "#3e95e7",
 		lib_link: "https://freeicons.io/",
 	},
 	{
 		id: 16,
 		lib_name: "Iconpacks",
 		lib_details: "Free PNG image, SVG vector icons for commercial and personal use.",
-		lib_color: "#2E4857",
 		lib_link: "https://www.iconpacks.net/",
 	},
 	{
 		id: 17,
 		lib_name: "Iconfinder",
 		lib_details: "Icons and Illustrations extensive, made easy. Make that icon perfect.",
-		lib_color: "#ee5253",
 		lib_link: "https://www.iconfinder.com/",
 	},
 	{
 		id: 18,
 		lib_name: "Lordicon",
 		lib_details: "Powerful animated icon library with every animated Lottie animations.",
-		lib_color: "#08c18a",
 		lib_link: "https://lordicon.com/",
 	},
 	{
 		id: 19,
 		lib_name: "UX Wing",
 		lib_details: "Well Optimized SVG & PNG icons for interface design of Web and App Dev.",
-		lib_color: "#2fc6b2",
 		lib_link: "https://uxwing.com/",
 	},
 	{
 		id: 20,
 		lib_name: "Freepik",
 		lib_details: "One of the most popular platforms for finding free vector icons online",
-		lib_color: "#2fc6b2",
 		lib_link: "https://www.freepik.com/",
 	},
 	{
 		id: 21,
 		lib_name: "Iconninja",
 		lib_details: "Provides icon materials with detailed information, in PNG and SVG",
-		lib_color: "#2fc6b2",
 		lib_link: "https://www.iconninja.com/",
 	},
 	{
 		id: 22,
 		lib_name: "Vector4Free",
 		lib_details: "Attractive icons and vector graphics personal use",
-		lib_color: "#2fc6b2",
 		lib_link: "https://www.vector4free.com/",
 	},
 	{
 		id: 23,
 		lib_name: "The Noun Project",
 		lib_details: "Cool bi-colored icons stock for almost everything",
-		lib_color: "#2fc6b2",
 		lib_link: "https://thenounproject.com/",
 	},
 	{
 		id: 24,
 		lib_name: "Iconmonstr",
 		lib_details: "Comprehensive icon library offers outlined and filled versions of each icon",
-		lib_color: "#2fc6b2",
 		lib_link: "https://iconmonstr.com/",
 	},
 	{
 		id: 25,
 		lib_name: "Orion",
 		lib_details: "Cool SVG vector icons of line, solid, color and flat styles",
-		lib_color: "#2fc6b2",
 		lib_link: "https://orioniconlibrary.com/",
 	},
 	{
 		id: 26,
 		lib_name: "IcoMoon",
 		lib_details: "Icon fonts and Icon packs, available on both website and app",
-		lib_color: "#2fc6b2",
 		lib_link: "https://icomoon.io/",
 	},
 	{
 		id: 27,
 		lib_name: "Pictonic",
 		lib_details: "Offers an array of icon fonts sorted according to theme",
-		lib_color: "#2fc6b2",
 		lib_link: "https://pictonic.co/",
 	},
 	{
 		id: 28,
 		lib_name: "Glyphish",
 		lib_details: "Features icons for iOS, Android and the Apple Watch",
-		lib_color: "#2fc6b2",
 		lib_link: "https://www.glyphish.com/",
 	},
 	{
 		id: 29,
 		lib_name: "PixelLove",
 		lib_details: "Six versatile icon styles for iOS and Android platforms",
-		lib_color: "#2fc6b2",
 		lib_link: "https://www.pixellove.com/",
 	},
 	{
 		id: 30,
 		lib_name: "Smashicons",
 		lib_details: "Very large collection of icons, don't all follow the same style",
-		lib_color: "#2fc6b2",
 		lib_link: "https://smashicons.com/",
 	},
 	{
 		id: 31,
 		lib_name: "Roundicons",
 		lib_details: "Commercial use icon library made for apps, websites, infographics and prints",
-		lib_color: "#2fc6b2",
 		lib_link: "https://roundicons.com/",
 	},
 	{
@@ -238,7 +207,6 @@ let iconData = [
 		lib_name: "React Icons",
 		lib_details:
 			"Icon compilation library to add icons from various libraries into React project as an SVG element",
-		lib_color: "#2fc6b2",
 		lib_link: "https://react-icons.github.io/react-icons/",
 	},
 ];
