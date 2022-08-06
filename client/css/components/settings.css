@@ -51,7 +51,7 @@ html {
 
 body {
 	font-family: var(--mainfont);
-	background: var(--primarywhite) url(../../img/bg_glass.png) no-repeat fixed center / cover;
+	background: var(--maincolor) url(../../img/bg_glass.png) no-repeat fixed center / cover;
 }
 
 main {
