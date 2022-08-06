@@ -56,6 +56,7 @@ div.dev_banner h2 {
 
 div.dev_banner h1 {
 	margin: 2rem auto;
+	margin-bottom: -4rem;
 	font-size: 20rem;
 	font-weight: 400;
 	font-family: "Spectron", sans-serif;
@@ -599,6 +600,7 @@ div.dev_addnew a {
 	letter-spacing: 1px;
 	text-align: center;
 	text-decoration: none;
+	user-select: none;
 }
 
 div.dev_addnew a::before {

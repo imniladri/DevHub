@@ -23,13 +23,13 @@
     <meta property="og:image" content="./img/logo.svg" />
 
     <!-- Icons -->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" />
 
     <!-- Tab Color -->
     <!-- Mobile -->
-    <meta name="theme-color" content="#21222d" />
+    <meta name="theme-color" content="#2E025A" />
     <!-- Windows -->
-    <meta name="msapplication-navbutton-color" content="#21222d" />
+    <meta name="msapplication-navbutton-color" content="#2E025A" />
 
     <!-- EXTERNAL CSS -->
     <link rel="stylesheet" href="./css/libraries/bootstrap.min.css" />
@@ -41,17 +41,49 @@
     <!-- EXTERNAL JS -->
     <script defer src="./js/libraries/jquery-3.6.0.min.js"></script>
     <script defer src="./js/libraries/bootstrap.min.js"></script>
+    <script defer src="./js/libraries/particles.min.js"></script>
 
     <!-- MAIN JS -->
     <script defer src="./js/main.js"></script>
+    <script defer src="./js/dots.js"></script>
 
 </head>
 
 <body>
 
-    <!-- Error Section Start -->
+    <!-- Preloader Start -->
+    <div id="preloader">
+        <div class="loader">
+            <!-- <h2>Loading</h2> -->
+            <div class="dot-1"></div>
+            <div class="dot-2"></div>
+            <div class="dot-3"></div>
+        </div>
+    </div>
+    <!-- Preloader End -->
 
-    <!-- Error Section End -->
+    <main>
+
+        <!-- Background Dot Particles Start -->
+        <div id="dots-js"></div>
+        <!-- Background Dot Particles End -->
+
+        <!-- Error Section Start -->
+        <section id="error_404">
+            <div class="error_404">
+                <div class="text">
+                    <span>4</span>
+                    <img src="./img/error.svg" alt="0" />
+                    <span>4</span>
+                </div>
+                <h2>Page Not Found</h2>
+                <p>The page you are looking for is unavailable.</p>
+                <a href="javascript:history.back()">Go Back!</a>
+            </div>
+        </section>
+        <!-- Error Section End -->
+
+    </main>
 
 </body>
 

@@ -1,0 +1,183 @@
+/* *********************** Error 404 Page Styles *********************** */
+
+section#error_404 {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div#dots-js {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+div.error_404 {
+	margin: 4rem auto;
+	padding: 6rem 2rem;
+	position: relative;
+	width: 80%;
+	height: 85vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	/* Glass Effect */
+	border-radius: 16px;
+	background: rgba(255, 255, 255, 0.1);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1), inset 0px 0px 40px 20px rgba(255, 255, 255, 0.2);
+	border: 2px solid rgba(255, 255, 255, 0.7);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+}
+
+div.error_404 .text {
+	margin: auto;
+	margin-bottom: -5rem;
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.error_404 .text img {
+	margin: 0 1rem;
+	width: 22rem;
+	height: auto;
+	transform: translateY(-2rem);
+}
+
+div.error_404 .text span {
+	margin: 0 1rem;
+	font-size: 20rem;
+	font-weight: 600;
+	font-family: "Spectron", sans-serif;
+	color: var(--primarywhite);
+	text-align: center;
+}
+
+div.error_404 h2 {
+	margin: 1rem auto;
+	font-size: 8rem;
+	font-weight: 400;
+	font-family: "Spoiled", sans-serif;
+	color: var(--primarywhite);
+	letter-spacing: 3px;
+	text-align: center;
+}
+
+div.error_404 p {
+	margin: 1rem auto;
+	font-size: 2rem;
+	font-weight: 400;
+	font-family: "Astromax", sans-serif;
+	color: var(--lightwhite);
+	letter-spacing: 3px;
+	text-align: center;
+}
+
+div.error_404 a {
+	position: relative;
+	margin: 1.5rem auto;
+	padding: 1.8rem 4.4rem 1.4rem;
+	font-size: 2rem;
+	font-weight: 700;
+	font-family: "Liber", sans-serif;
+	color: var(--primarywhite);
+	border-radius: 50px;
+	background: rgba(255, 255, 255, 0.15);
+	box-shadow: 0 4px 20px rgb(0 0 0 / 20%), inset 0px 0px 10px 2px rgb(255 255 255 / 20%);
+	letter-spacing: 1px;
+	text-align: center;
+	text-decoration: none;
+	user-select: none;
+	transition: all 0.1s ease-in-out;
+}
+
+div.error_404 a::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 2.5px solid var(--primarywhite);
+	opacity: 0.4;
+	border-radius: 50px;
+	transition: all 0.1s ease-in-out;
+}
+
+div.error_404 a:hover {
+	background: rgba(255, 255, 255, 0.2);
+}
+
+div.error_404 a:hover:before {
+	opacity: 0.8;
+}
+
+/* ************************* Responsive Media ************************* */
+
+@media (max-width: 992px) {
+	div.error_404 {
+		width: 90%;
+	}
+	div.error_404 .text img {
+		width: 20rem;
+	}
+	div.error_404 .text span {
+		font-size: 20rem;
+	}
+	div.error_404 h2 {
+		font-size: 8rem;
+	}
+	div.error_404 p {
+		font-size: 2rem;
+	}
+	div.error_404 a {
+		padding: 1.4rem 2.4rem 1rem;
+	}
+}
+
+@media (max-width: 768px) {
+	div.error_404 .text img {
+		width: 18rem;
+	}
+	div.error_404 .text span {
+		font-size: 18rem;
+	}
+	div.error_404 h2 {
+		font-size: 6rem;
+	}
+}
+
+@media (max-width: 572px) {
+	div.error_404 {
+		padding: 14rem 2rem;
+	}
+	div.error_404 .text {
+		margin-bottom: -3rem;
+	}
+	div.error_404 .text img {
+		width: 12rem;
+	}
+	div.error_404 .text span {
+		font-size: 12rem;
+		margin: 0;
+	}
+	div.error_404 h2 {
+		font-size: 4rem;
+	}
+	div.error_404 p {
+		font-size: 1.7rem;
+	}
+}
+
+/* **************************** Styles End **************************** */
